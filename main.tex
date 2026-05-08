@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper]{article}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage[a4paper,margin=1.55cm]{geometry}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{textgray}{HTML}{333333}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+\color{textgray}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{10pt}
+  {\large\bfseries\color{accent} #1}\par
+  \vspace{2pt}
+  {\color{accent}\hrule height 0.7pt}
+  \vspace{5pt}
+}
+
+\newcommand{\role}[4]{%
+  \textbf{#1} | #2\par
+  \textit{#3} | \textit{#4}\par
+  \vspace{2pt}
+}
+
+\newcommand{\achievement}[1]{-- #1\par\vspace{2pt}}
+
+\begin{document}
+
+{\LARGE\bfseries Marcio Valente}\par
+\vspace{2pt}
+{\large Software Developer | Desenvolvedor Frontend}\par
+\vspace{5pt}
+\href{mailto:eric.melv42@gmail.com}{eric.melv42@gmail.com}
+\quad | \quad
+(92) 99514-4499
+\quad | \quad
+Itacoatiara, Amazonas, Brasil\par
+\href{https://www.linkedin.com/in/marcioericlvalente}{linkedin.com/in/marcioericlvalente}
+\quad | \quad
+\href{https://www.github.com/mericxy}{github.com/mericxy}
+
+\sectiontitle{Resumo Profissional}
+Estudante de Engenharia de Software com foco em desenvolvimento frontend e aplicações orientadas a dados. Experiência prática em projetos de pesquisa, construção de interfaces interativas, integração com APIs REST e visualização de dados reais. Perfil orientado a aprendizado contínuo, colaboração em equipe ágil e entrega de soluções funcionais com React, JavaScript, Python, Django e FastAPI.
+
+\sectiontitle{Competências Técnicas}
+Frontend: JavaScript, HTML, CSS, React, Tailwind CSS, Figma.\par
+Visualização de dados: Apache ECharts, Highcharts, construção de dashboards e interfaces para análise de dados.\par
+Backend e APIs: Python, FastAPI, Django, Node.js, consumo e integração de APIs REST.\par
+Ferramentas: Git, GitHub, organização de planilhas, documentação e trabalho em equipe ágil.
+
+\sectiontitle{Experiência Profissional}
+\role{Desenvolvedor Frontend}{Mai/2025 -- Presente}{MOB4AI | Projeto de pesquisa Motorola/UFAM}{Itacoatiara, Amazonas}
+\achievement{Desenvolvi interfaces interativas com React para visualização de dados reais em projeto de pesquisa em parceria entre Motorola e UFAM.}
+\achievement{Integrei APIs REST com Django e FastAPI, contribuindo para reduzir o tempo de carregamento e melhorar a experiência de consulta dos dados.}
+\achievement{Construí funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.}
+\achievement{Colaborei em equipe ágil, entregando funcionalidades em ciclos semanais e mantendo comunicação constante sobre evolução, bloqueios e prioridades.}
+
+\vspace{4pt}
+\role{Estagiário}{Nov/2024 -- Mai/2025}{CETAM}{Itacoatiara, Amazonas}
+\achievement{Atuei em ambiente corporativo, desenvolvendo habilidades profissionais, administrativas e de comunicação.}
+\achievement{Prestei suporte a atividades administrativas, incluindo elaboração de documentos, organização de planilhas e resolução de problemas operacionais.}
+\achievement{Desenvolvi competências em trabalho em equipe, organização, adaptação e atendimento às demandas do dia a dia profissional.}
+
+\sectiontitle{Educação}
+\role{Bacharelado em Engenharia de Software}{Dez/2022 -- Presente}{Universidade Federal do Amazonas}{Itacoatiara, Amazonas}
+
+\sectiontitle{Idiomas}
+Português: Nativo\par
+Inglês: Avançado
+
+\sectiontitle{Palavras-chave}
+Desenvolvedor Frontend, Software Developer, React, JavaScript, HTML, CSS, Tailwind CSS, Python, Django, FastAPI, Node.js, APIs REST, Visualização de Dados, Apache ECharts, Highcharts, Git, GitHub, Figma, Engenharia de Software.
+
+\end{document}
