@@ -2,6 +2,12 @@
 
 Curriculo de Marcio Valente em LaTeX, otimizado para leitura humana e para sistemas ATS/modelos de IA.
 
+## Preview
+
+[Abrir PDF](main.pdf)
+
+![Preview do curriculo](preview.png)
+
 ## Compilar
 
 ```bash
