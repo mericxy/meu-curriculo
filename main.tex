@@ -1,11 +1,13 @@
 \documentclass[10pt,a4paper]{article}
 
-\input{glyphtounicode}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[brazilian]{babel}
+\usepackage[provide=*,brazilian]{babel}
 \usepackage[a4paper,margin=1.55cm]{geometry}
 \usepackage{lmodern}
 \usepackage{xcolor}
@@ -53,47 +55,48 @@
 
 {\LARGE\bfseries Marcio Valente}\par
 \vspace{2pt}
-{\large Desenvolvedor Frontend | Frontend Developer | Software Developer}\par
+{\large Desenvolvedor de Software | Desenvolvedor Full Stack}\par
 \vspace{5pt}
 \href{mailto:eric.melv42@gmail.com}{eric.melv42@gmail.com}
 \quad | \quad
 (92) 99514-4499
 \quad | \quad
-Itacoatiara, Amazonas, Brasil\par
+Brasil\par
 \href{https://www.linkedin.com/in/marcioericlvalente}{linkedin.com/in/marcioericlvalente}
 \quad | \quad
 \href{https://www.github.com/mericxy}{github.com/mericxy}
 
 \sectiontitle{Resumo Profissional}
-Construo interfaces frontend que transformam dados reais em ferramentas claras para análise, pesquisa e tomada de decisão, com foco em legibilidade, desempenho e manutenção. No projeto Motorola/UFAM (MOB4AI), atuo em dashboards analíticos, arquitetura frontend, escolha de stack, deploy em servidor e otimizações que melhoraram significativamente a experiência do usuário.
+Desenvolvedor de software com experiência na construção de aplicações web e mobile, integração de APIs, visualização de dados e desenvolvimento de soluções de frontend e backend. No projeto Motorola/UFAM (MOB4AI), atuo em dashboards analíticos, arquitetura frontend, definição da stack tecnológica, implantação em servidor e otimizações que melhoraram a experiência do usuário.
 
 \sectiontitle{Competências Técnicas}
 Frontend e UI: JavaScript, TypeScript, HTML5, CSS3, React, React Hooks, Vite, Tailwind CSS e Figma.\par
-Dados, visualização e APIs: Apache ECharts, Highcharts, dashboards, gráficos interativos, análise de dados, consumo e integração de APIs REST.\par
-Backend e infraestrutura: Python, FastAPI, Django, Node.js, NestJS, PostgreSQL, Docker, Git e GitHub Actions.\par
-Qualidade e entrega: Vitest, testes em aplicações React, testes de componentes, Pytest, Jira, documentação, trabalho em equipe ágil e entregas incrementais.
+Desenvolvimento mobile e de aplicações: Java, Kotlin, desenvolvimento Android e Jetpack Compose.\par
+Visualização de dados e APIs: Apache ECharts, Highcharts, dashboards, gráficos interativos, análise de dados, consumo e integração de APIs REST.\par
+Backend e infraestrutura: Python, FastAPI, Django, Node.js, NestJS, Spring Boot, PostgreSQL, Docker, Git e GitHub Actions.\par
+Qualidade e entrega: Vitest, testes de aplicações React, testes de componentes, Pytest, Jira, documentação, trabalho em equipe ágil e entregas incrementais.
 
 \sectiontitle{Experiência Profissional}
-\role{Frontend Developer}{Mai/2025 -- Presente}{MOB4AI | Projeto de pesquisa Motorola/UFAM}{Itacoatiara, Amazonas}
-\achievement{Desenvolvi interfaces interativas com React para visualização de dados reais em projeto de pesquisa em parceria entre Motorola e UFAM.}
-\achievement{Atuei na melhoria da experiência de uso em dashboards analíticos, com foco em navegação, legibilidade e interação entre visualizações de dados.}
-\achievement{Construí funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.}
-\achievement{Participei de decisões de arquitetura frontend, definição de stack para novas ferramentas e deploy em servidor em contato com outros times.}
+\role{Desenvolvedor de Software}{mai/2025 -- atual}{MOB4AI | Projeto de pesquisa Motorola/UFAM}{Itacoatiara, Amazonas}
+\achievement{Desenvolvi interfaces interativas com React para visualização de dados reais em um projeto de pesquisa realizado em parceria entre Motorola e UFAM.}
+\achievement{Melhorei a experiência do usuário em dashboards analíticos, com foco em navegação, legibilidade e interação entre visualizações de dados.}
+\achievement{Desenvolvi funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.}
+\achievement{Participei de decisões de arquitetura frontend, definição da stack para novas ferramentas e implantação em servidor em colaboração com outras equipes.}
 
 \vspace{4pt}
-\role{Estagiário}{Nov/2024 -- Mai/2025}{CETAM}{Itacoatiara, Amazonas}
-\achievement{Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.}
+\role{Estagiário}{nov/2024 -- mai/2025}{CETAM}{Itacoatiara, Amazonas}
+\achievement{Prestei suporte técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação às rotinas profissionais.}
 
 \sectiontitle{Projetos}
-\project{ReservaUFAM | \href{https://github.com/mericxy/ReservaUFAM}{github.com/mericxy/ReservaUFAM}}{Docker, Python, Django, PostgreSQL, React, Tailwind CSS, Vite}{Projeto em equipe desenvolvido para disciplinas da UFAM para centralizar reservas de recursos institucionais. Atuei como desenvolvedor frontend, contribuindo para interfaces em React, Tailwind CSS e Vite integradas a funcionalidades.}
+\project{ReservaUFAM | \href{https://github.com/mericxy/ReservaUFAM}{github.com/mericxy/ReservaUFAM}}{Docker, Python, Django, PostgreSQL, React, Tailwind CSS, Vite}{Projeto em equipe desenvolvido para disciplinas da UFAM com o objetivo de centralizar reservas de recursos institucionais. Atuei como desenvolvedor frontend, contribuindo com interfaces em React, Tailwind CSS e Vite integradas à aplicação.}
 
-\project{NAVIR Web | \href{https://github.com/navir-ufam/NAVIR-Web}{github.com/navir-ufam/NAVIR-Web}}{React, TypeScript, Vite, NestJS, PostgreSQL, Jira}{Sistema interno de utilidade real para o laboratório NAVIR da UFAM. Como tech lead, colidero a frente técnica, apoiando decisões de arquitetura, organização de demandas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.}
+\project{NAVIR Web | \href{https://github.com/navir-ufam/NAVIR-Web}{github.com/navir-ufam/NAVIR-Web}}{React, TypeScript, Vite, NestJS, PostgreSQL, Jira}{Sistema interno utilizado nas operações do laboratório NAVIR da UFAM. Como líder técnico (tech lead), colidero o trabalho técnico, apoiando decisões de arquitetura, organização de tarefas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.}
 
-\sectiontitle{Educação}
-\role{Bacharelado em Engenharia de Software}{Dez/2022 -- Presente}{Universidade Federal do Amazonas}{Itacoatiara, Amazonas}
+\sectiontitle{Formação Acadêmica}
+\role{Bacharelado em Engenharia de Software}{out/2022 -- atual}{Universidade Federal do Amazonas}{Itacoatiara, Amazonas}
 
 \sectiontitle{Idiomas}
-Português: Nativo\par
-Inglês: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional
+Português: nativo\par
+Inglês: intermediário para leitura de documentação técnica, escrita cotidiana e comunicação funcional
 
 \end{document}
