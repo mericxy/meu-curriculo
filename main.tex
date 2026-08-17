@@ -54,52 +54,27 @@
   \vspace{1pt}
 }
 
+\newcommand{\resumeheader}[7]{%
+  {\LARGE\bfseries #1}\par
+  \vspace{2pt}
+  {\large #2}\par
+  \vspace{5pt}
+  #3
+  \quad | \quad
+  #4
+  \quad | \quad
+  #5\par
+  #6
+  \quad | \quad
+  #7
+}
+
+\newcommand{\resumeparagraph}[1]{#1\par}
+\newcommand{\resumelanguage}[2]{#1: #2\par}
+
 \begin{document}
 
-{\LARGE\bfseries Marcio Valente}\par
-\vspace{2pt}
-{\large Desenvolvedor de Software | Full Stack | Frontend}\par
-\vspace{5pt}
-\href{mailto:eric.melv42@gmail.com}{eric.melv42@gmail.com}
-\quad | \quad
-(92) 99514-4499
-\quad | \quad
-Manaus, Amazonas, Brasil\par
-\href{https://www.linkedin.com/in/marcioericlvalente}{linkedin.com/in/marcioericlvalente}
-\quad | \quad
-\href{https://www.github.com/mericxy}{github.com/mericxy}
-
-\sectiontitle{Resumo Profissional}
-Desenvolvedor de software com base sólida em frontend e atuação em aplicações web com integração de APIs, visualização de dados, backend e deploy. Tenho interesse em evoluir para uma atuação mais full stack, aproximando desenvolvimento, infraestrutura e práticas de DevOps sem perder o foco em legibilidade, manutenção e experiência do usuário. No projeto Motorola/UFAM (MOB4AI), atuo em dashboards analíticos, arquitetura frontend, escolha de stack, deploy em servidor e melhorias de usabilidade.
-
-\sectiontitle{Competências Técnicas}
-\skill{Frontend e UI}{JavaScript, TypeScript, HTML5, CSS3, React, React Hooks, Vite, Tailwind CSS e Figma.}
-\skill{Backend e APIs}{Python, FastAPI, Django, Node.js, NestJS, PostgreSQL, consumo e integração de APIs REST.}
-\skill{Dados e visualização}{Apache ECharts, Highcharts, dashboards, gráficos interativos e análise de dados.}
-\skill{Infraestrutura e DevOps}{Docker, deploy em servidor, Git, GitHub Actions, documentação e entregas incrementais.}
-\skill{Qualidade e colaboração}{Vitest, testes em aplicações React, testes de componentes, Pytest, Jira, trabalho em equipe ágil e organização de demandas.}
-
-\sectiontitle{Experiência Profissional}
-\role{Frontend Developer}{Mai/2025 -- Presente}{MOB4AI | Projeto de pesquisa Motorola/UFAM}{Manaus, Amazonas}
-\achievement{Desenvolvi interfaces interativas com React para visualização de dados reais em projeto de pesquisa em parceria entre Motorola e UFAM.}
-\achievement{Atuei na melhoria da experiência de uso em dashboards analíticos, com foco em navegação, legibilidade e interação entre visualizações de dados.}
-\achievement{Construí funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.}
-\achievement{Participei de decisões de arquitetura frontend, definição de stack para novas ferramentas e deploy em servidor em contato com outros times.}
-
-\vspace{4pt}
-\role{Estagiário}{Nov/2024 -- Mai/2025}{CETAM}{Manaus, Amazonas}
-\achievement{Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.}
-
-\sectiontitle{Projetos}
-\project{ReservaUFAM | \href{https://github.com/mericxy/ReservaUFAM}{github.com/mericxy/ReservaUFAM}}{Docker, Python, Django, PostgreSQL, React, Tailwind CSS, Vite}{Projeto em equipe desenvolvido para disciplinas da UFAM para centralizar reservas de recursos institucionais. Atuei como desenvolvedor frontend, contribuindo para interfaces em React, Tailwind CSS e Vite integradas a funcionalidades.}
-
-\project{NAVIR Web | \href{https://github.com/navir-ufam/NAVIR-Web}{github.com/navir-ufam/NAVIR-Web}}{React, TypeScript, Vite, NestJS, PostgreSQL, Jira}{Sistema interno de utilidade real para o laboratório NAVIR da UFAM. Como tech lead, colidero a frente técnica, apoiando decisões de arquitetura, organização de demandas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.}
-
-\sectiontitle{Educação}
-\role{Bacharelado em Engenharia de Software}{Out/2022 -- Conclusão prevista: Jan/2027}{Universidade Federal do Amazonas}{Manaus, Amazonas}
-
-\sectiontitle{Idiomas}
-Português: Nativo\par
-Inglês: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional
+\providecommand{\resumedata}{curriculo.tex}
+\input{\resumedata}
 
 \end{document}

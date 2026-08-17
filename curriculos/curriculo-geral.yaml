@@ -1,0 +1,107 @@
+# Versão geral para vagas de TI, sistemas, suporte técnico ou desenvolvimento.
+pessoal:
+  nome: Marcio Valente
+  titulo: "Tecnologia da Informação | Sistemas | Suporte Técnico"
+  email: eric.melv42@gmail.com
+  telefone: "(92) 99514-4499"
+  localizacao: "Manaus, Amazonas, Brasil"
+  linkedin:
+    url: https://www.linkedin.com/in/marcioericlvalente
+    texto: linkedin.com/in/marcioericlvalente
+  github:
+    url: https://www.github.com/mericxy
+    texto: github.com/mericxy
+
+resumo: >-
+  Profissional de tecnologia da informação e estudante de Engenharia de Software,
+  com experiência em desenvolvimento de sistemas web, apoio técnico e administrativo,
+  organização de demandas, documentação e resolução de problemas. Atuo em projeto de
+  pesquisa da Motorola em parceria com a UFAM, colaborando na criação e manutenção de
+  ferramentas, dashboards e sistemas internos. Busco oportunidades em suporte, sistemas,
+  operações de TI ou desenvolvimento, com facilidade para aprender ferramentas e trabalhar
+  em equipe.
+
+competencias:
+  - categoria: Suporte e operações
+    itens:
+      - apoio técnico
+      - resolução de problemas
+      - organização de rotinas
+      - documentação
+      - atendimento de demandas
+  - categoria: Sistemas e dados
+    itens:
+      - aplicações web
+      - integração de APIs
+      - dashboards
+      - visualização de dados
+      - PostgreSQL
+      - deploy em servidor
+  - categoria: Desenvolvimento
+    itens:
+      - React
+      - JavaScript
+      - TypeScript
+      - Python
+      - Django
+      - FastAPI
+      - Node.js
+      - HTML5
+      - CSS3
+  - categoria: Ferramentas e processos
+    itens:
+      - Git
+      - GitHub
+      - Docker
+      - Jira
+      - Figma
+      - testes de software
+      - trabalho em equipe ágil
+      - entregas incrementais
+
+experiencias:
+  - cargo: Frontend Developer
+    periodo: Mai/2025 -- Presente
+    organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Desenvolvi interfaces interativas com React para visualização de dados reais em projeto de pesquisa em parceria entre Motorola e UFAM.
+      - Atuei na melhoria da experiência de uso em dashboards analíticos, com foco em navegação, legibilidade e interação entre visualizações de dados.
+      - Construí funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.
+      - Participei de decisões de arquitetura frontend, definição de stack para novas ferramentas e deploy em servidor em contato com outros times.
+  - cargo: Estagiário
+    periodo: Nov/2024 -- Mai/2025
+    organizacao: CETAM
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.
+
+projetos:
+  - nome: ReservaUFAM
+    links:
+      - url: https://github.com/mericxy/ReservaUFAM
+        texto: github.com/mericxy/ReservaUFAM
+    subtitulo: "Sistema de reservas institucionais | Projeto em equipe"
+    descricao: Projeto desenvolvido para disciplinas da UFAM com o objetivo de centralizar reservas de recursos institucionais. Atuei na construção das interfaces e na integração das funcionalidades do sistema.
+  - nome: NAVIR Web
+    links:
+      - url: https://github.com/navir-ufam/NAVIR-Web
+        texto: github.com/navir-ufam/NAVIR-Web
+    subtitulo: "Sistema de gestão acadêmica | Liderança técnica"
+    descricao: Sistema interno do laboratório NAVIR da UFAM. Como tech lead, colidero a frente técnica, apoiando decisões de arquitetura, organização de demandas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.
+
+educacao:
+  - curso: Bacharelado em Engenharia de Software
+    periodo: "Out/2022 -- Conclusão prevista: Jan/2027"
+    instituicao: Universidade Federal do Amazonas
+    localizacao: "Manaus, Amazonas"
+
+idiomas:
+  - idioma: Português
+    nivel: Nativo
+  - idioma: Inglês
+    nivel: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional
+
+informacoes_adicionais:
+  - titulo: Carteira Nacional de Habilitação (CNH)
+    valor: categorias A e B

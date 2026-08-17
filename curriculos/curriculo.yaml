@@ -1,0 +1,123 @@
+# Perfil de software: fonte de conteúdo; o layout permanece em main.tex.
+pessoal:
+  nome: Marcio Valente
+  titulo: "Desenvolvedor de Software | Full Stack | Frontend"
+  email: eric.melv42@gmail.com
+  telefone: "(92) 99514-4499"
+  localizacao: "Manaus, Amazonas, Brasil"
+  linkedin:
+    url: https://www.linkedin.com/in/marcioericlvalente
+    texto: linkedin.com/in/marcioericlvalente
+  github:
+    url: https://www.github.com/mericxy
+    texto: github.com/mericxy
+
+resumo: >-
+  Desenvolvedor de software com base sólida em frontend e atuação em aplicações web
+  com integração de APIs, visualização de dados, backend e deploy. Tenho interesse em
+  evoluir para uma atuação mais full stack, aproximando desenvolvimento, infraestrutura
+  e práticas de DevOps sem perder o foco em legibilidade, manutenção e experiência do
+  usuário. No projeto Motorola/UFAM (MOB4AI), atuo em dashboards analíticos, arquitetura
+  frontend, escolha de stack, deploy em servidor e melhorias de usabilidade.
+
+competencias:
+  - categoria: Frontend e UI
+    itens:
+      - JavaScript
+      - TypeScript
+      - HTML5
+      - CSS3
+      - React
+      - React Hooks
+      - Vite
+      - Tailwind CSS
+      - Figma
+  - categoria: Backend e APIs
+    itens:
+      - Python
+      - FastAPI
+      - Django
+      - Node.js
+      - NestJS
+      - PostgreSQL
+      - consumo e integração de APIs REST
+  - categoria: Dados e visualização
+    itens:
+      - Apache ECharts
+      - Highcharts
+      - dashboards
+      - gráficos interativos
+      - análise de dados
+  - categoria: Infraestrutura e DevOps
+    itens:
+      - Docker
+      - deploy em servidor
+      - Git
+      - GitHub Actions
+      - documentação
+      - entregas incrementais
+  - categoria: Qualidade e colaboração
+    itens:
+      - Vitest
+      - testes em aplicações React
+      - testes de componentes
+      - Pytest
+      - Jira
+      - trabalho em equipe ágil
+      - organização de demandas
+
+experiencias:
+  - cargo: Frontend Developer
+    periodo: Mai/2025 -- Presente
+    organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Desenvolvi interfaces interativas com React para visualização de dados reais em projeto de pesquisa em parceria entre Motorola e UFAM.
+      - Atuei na melhoria da experiência de uso em dashboards analíticos, com foco em navegação, legibilidade e interação entre visualizações de dados.
+      - Construí funcionalidades orientadas a dados usando bibliotecas de visualização como Apache ECharts e Highcharts.
+      - Participei de decisões de arquitetura frontend, definição de stack para novas ferramentas e deploy em servidor em contato com outros times.
+  - cargo: Estagiário
+    periodo: Nov/2024 -- Mai/2025
+    organizacao: CETAM
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.
+
+projetos:
+  - nome: ReservaUFAM
+    links:
+      - url: https://github.com/mericxy/ReservaUFAM
+        texto: github.com/mericxy/ReservaUFAM
+    tecnologias:
+      - Docker
+      - Python
+      - Django
+      - PostgreSQL
+      - React
+      - Tailwind CSS
+      - Vite
+    descricao: Projeto em equipe desenvolvido para disciplinas da UFAM para centralizar reservas de recursos institucionais. Atuei como desenvolvedor frontend, contribuindo para interfaces em React, Tailwind CSS e Vite integradas a funcionalidades.
+  - nome: NAVIR Web
+    links:
+      - url: https://github.com/navir-ufam/NAVIR-Web
+        texto: github.com/navir-ufam/NAVIR-Web
+    tecnologias:
+      - React
+      - TypeScript
+      - Vite
+      - NestJS
+      - PostgreSQL
+      - Jira
+    descricao: Sistema interno de utilidade real para o laboratório NAVIR da UFAM. Como tech lead, colidero a frente técnica, apoiando decisões de arquitetura, organização de demandas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.
+
+educacao:
+  - curso: Bacharelado em Engenharia de Software
+    periodo: "Out/2022 -- Conclusão prevista: Jan/2027"
+    instituicao: Universidade Federal do Amazonas
+    localizacao: "Manaus, Amazonas"
+
+idiomas:
+  - idioma: Português
+    nivel: Nativo
+  - idioma: Inglês
+    nivel: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional

@@ -4,21 +4,28 @@ Instrucoes para agentes trabalhando neste repositorio.
 
 ## Objetivo do repositorio
 
-Este repositorio mantem o curriculo de Marcio Valente em LaTeX, com PDF final e imagem de preview para exibicao no README.
+Este repositorio mantem versoes do curriculo de Marcio Valente com conteudo em YAML, layout compartilhado em LaTeX, PDFs finais e imagens de preview para exibicao no README.
 
 Prioridades:
 
 - Manter o curriculo simples, legivel e otimizado para ATS/modelos de IA.
 - Evitar layouts complexos, colunas, tabelas, icones ou elementos que prejudiquem a extracao de texto.
 - Preservar conteudo verdadeiro. Nao inventar tecnologias, metricas, cargos, projetos ou resultados.
-- Sempre atualizar `main.pdf` e `preview.png` quando `main.tex` mudar.
+- Sempre atualizar o PDF e o preview correspondentes quando um YAML mudar.
+- Sempre executar `make todos` quando o layout compartilhado ou o gerador mudar.
 
 ## Arquivos principais
 
-- `main.tex`: fonte principal do curriculo.
-- `main.pdf`: PDF compilado a partir do LaTeX.
-- `preview.png`: imagem da primeira pagina do PDF usada no README.
-- `README.md`: exibicao do preview, link para o PDF e comando de compilacao.
+- `curriculos/curriculo.yaml`: fonte de conteudo do perfil de software.
+- `curriculos/curriculo-geral.yaml`: fonte de conteudo do perfil geral de TI, sistemas e suporte.
+- `curriculo.tex` e `curriculo-geral.tex`: arquivos intermediarios gerados; nao editar manualmente.
+- `main.tex`: layout compartilhado e ponto de entrada do perfil de software.
+- `main-geral.tex`: ponto de entrada que seleciona os dados do perfil geral.
+- `main.pdf` e `preview.png`: artefatos finais do perfil de software.
+- `main-geral.pdf` e `preview-geral.png`: artefatos finais do perfil geral.
+- `scripts/generate_resume.rb`: validacao e conversao dos YAMLs para TeX.
+- `Makefile`: alvos `software`, `geral` e `todos`.
+- `README.md`: exibicao dos previews, links para os PDFs e documentacao da arquitetura.
 - `TODO-PROJETOS.md`: backlog para adicionar projetos ao curriculo.
 - `LOG-TO-DO.md`: registro das mudancas executadas a partir de tarefas do usuario.
 
@@ -30,37 +37,44 @@ Prioridades:
 git status --short --untracked-files=all
 ```
 
-2. Antes de editar, leia os arquivos relevantes. Para mudancas no curriculo, normalmente leia:
+2. Antes de editar, leia o YAML do perfil solicitado e os arquivos compartilhados relevantes:
 
 ```bash
+sed -n '1,260p' curriculos/curriculo.yaml
+sed -n '1,260p' curriculos/curriculo-geral.yaml
 sed -n '1,260p' main.tex
-sed -n '1,200p' README.md
+sed -n '1,280p' README.md
 ```
 
-3. Edite `main.tex` de forma conservadora, mantendo:
+3. Edite o conteudo no YAML correspondente. Edite `main.tex` somente para mudancas de layout, mantendo:
 
 - Uma pagina sempre que possivel.
 - Secoes diretas: resumo, competencias, experiencia, educacao, idiomas e projetos quando existirem.
 - Texto extraivel e sem decoracao excessiva.
 - Keywords distribuidas naturalmente nas experiencias e competencias, sem secao artificial de "Palavras-chave".
 
-4. Recompile o PDF sempre que `main.tex` mudar:
+4. Gere o perfil correspondente quando o conteudo mudar:
 
 ```bash
-latexmk -pdf -g main.tex
+make software
+make geral
 ```
 
-5. Regere o preview PNG sempre que `main.pdf` mudar:
+Quando `main.tex`, `scripts/generate_resume.rb`, `latexmkrc` ou o `Makefile` mudar, gere todos os perfis:
 
 ```bash
-pdftoppm -png -singlefile -r 160 main.pdf preview
+make todos
 ```
 
-6. Valide o PDF para ATS/modelos de IA:
+Os alvos do Make tambem regeneram os previews PNG.
+
+5. Valide os PDFs para ATS/modelos de IA:
 
 ```bash
 pdftotext main.pdf -
 pdfinfo main.pdf
+pdftotext main-geral.pdf -
+pdfinfo main-geral.pdf
 ```
 
 Critérios mínimos:
@@ -84,7 +98,7 @@ Document resume workflow
 Antes de commitar:
 
 ```bash
-git diff -- main.tex README.md AGENTS.md TODO-PROJETOS.md LOG-TO-DO.md
+git diff -- Makefile main.tex main-geral.tex curriculos/curriculo.yaml curriculos/curriculo-geral.yaml README.md AGENTS.md scripts/generate_resume.rb latexmkrc TODO-PROJETOS.md LOG-TO-DO.md
 git status --short --untracked-files=all
 ```
 
