@@ -84,6 +84,23 @@ experiencias:
       - Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.
 
 projetos:
+  - nome: DocParse
+    links:
+      - url: https://docparse.meric.dev.br/
+        texto: docparse.meric.dev.br
+      - url: https://github.com/mericxy/DocParse
+        texto: github.com/mericxy/DocParse
+    tecnologias:
+      - Python
+      - FastAPI
+      - PyMuPDF
+      - Tesseract OCR
+      - SQLite
+      - React
+      - TypeScript
+      - Vite
+      - Docker
+    descricao: Aplicação web para processamento, OCR e transcrição de documentos trabalhistas (cartões de ponto e holerites) em planilhas e JSON. Desenvolvida com pipeline assíncrono (FastAPI, PyMuPDF, worker em SQLite), interface de revisão em React/TypeScript e deploy com Docker Compose.
   - nome: ReservaUFAM
     links:
       - url: https://github.com/mericxy/ReservaUFAM

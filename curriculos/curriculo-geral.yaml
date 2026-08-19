@@ -77,6 +77,14 @@ experiencias:
       - Prestei apoio técnico e administrativo em ambiente corporativo, desenvolvendo organização, comunicação, resolução de problemas operacionais e adaptação a rotinas profissionais.
 
 projetos:
+  - nome: DocParse
+    links:
+      - url: https://docparse.meric.dev.br/
+        texto: docparse.meric.dev.br
+      - url: https://github.com/mericxy/DocParse
+        texto: github.com/mericxy/DocParse
+    subtitulo: "Processamento e transcrição de documentos | Full Stack e OCR"
+    descricao: Aplicação web para leitura, OCR e extração estruturada de dados de cartões de ponto e holerites em PDF para planilhas. Inclui processamento assíncrono em Python, interface de conferência em React e deploy conteinerizado com Docker.
   - nome: ReservaUFAM
     links:
       - url: https://github.com/mericxy/ReservaUFAM
