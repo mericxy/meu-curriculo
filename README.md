@@ -1,12 +1,12 @@
 # Currículos em YAML e LaTeX
 
-Currículos de Marcio Valente com conteúdo em YAML e layout compartilhado em LaTeX, otimizados para leitura humana e para sistemas ATS/modelos de IA.
+Currículos de Marcio Valente com conteúdo em YAML e layout compartilhado em LaTeX, otimizados para leitura humana e para sistemas ATS/modelos de IA. Disponível também em versão web interativa em [meric.dev.br/resume](https://meric.dev.br/resume/).
 
 ## Preview
 
 ### Perfil de software
 
-[Abrir PDF](main.pdf) | [Baixar DOCX](curriculo.docx)
+[Abrir PDF](main.pdf) | [Baixar DOCX](curriculo.docx) | [Versão Web](https://meric.dev.br/resume/)
 
 ![Preview do currículo de software](preview.png)
 
