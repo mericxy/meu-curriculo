@@ -1,0 +1,47 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Install document dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends \
+            latexmk \
+            lmodern \
+            poppler-utils \
+            texlive-lang-portuguese \
+            texlive-latex-base \
+            texlive-latex-recommended
+
+      - name: Build all resumes
+        run: make todos
+
+      - name: Validate PDFs
+        run: |
+          pdfinfo main.pdf | grep -q '^Page size:.*A4'
+          pdfinfo main.pdf | grep -q '^Pages: *1$'
+          pdfinfo main-geral.pdf | grep -q '^Page size:.*A4'
+          pdfinfo main-geral.pdf | grep -q '^Pages: *1$'
+          pdftotext main.pdf - | grep -q 'Resumo Profissional'
+          pdftotext main-geral.pdf - | grep -q 'Resumo Profissional'
