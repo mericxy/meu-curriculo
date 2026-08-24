@@ -4,7 +4,7 @@ Instrucoes para agentes trabalhando neste repositorio.
 
 ## Objetivo do repositorio
 
-Este repositorio mantem versoes do curriculo de Marcio Valente com conteudo em YAML, layout compartilhado em LaTeX, PDFs finais e imagens de preview para exibicao no README.
+Este repositorio mantem versoes do curriculo de Marcio Valente com conteudo em YAML, layout compartilhado em LaTeX, PDFs finais, imagens de preview e uma API JSON estatica bilingue.
 
 Prioridades:
 
@@ -17,6 +17,7 @@ Prioridades:
 ## Arquivos principais
 
 - `curriculos/curriculo.yaml`: fonte de conteudo do perfil de software.
+- `curriculos/curriculo-en.yaml`: traducao inglesa do perfil de software para a API estatica.
 - `curriculos/curriculo-geral.yaml`: fonte de conteudo do perfil geral de TI, sistemas e suporte.
 - `curriculo.tex` e `curriculo-geral.tex`: arquivos intermediarios gerados; nao editar manualmente.
 - `main.tex`: layout compartilhado e ponto de entrada do perfil de software.
@@ -24,7 +25,9 @@ Prioridades:
 - `main.pdf` e `preview.png`: artefatos finais do perfil de software.
 - `main-geral.pdf` e `preview-geral.png`: artefatos finais do perfil geral.
 - `scripts/generate_resume.rb`: validacao e conversao dos YAMLs para TeX.
-- `Makefile`: alvos `software`, `geral` e `todos`.
+- `scripts/generate_resume_json.rb`: validacao bilingue e conversao para o contrato JSON publico.
+- `wrangler.jsonc`: configuracao do Worker que publica os assets estaticos.
+- `Makefile`: alvos `software`, `geral`, `api` e `todos`.
 - `README.md`: exibicao dos previews, links para os PDFs e documentacao da arquitetura.
 - `TODO-PROJETOS.md`: backlog para adicionar projetos ao curriculo.
 - `LOG-TO-DO.md`: registro das mudancas executadas a partir de tarefas do usuario.
@@ -60,13 +63,19 @@ make software
 make geral
 ```
 
-Quando `main.tex`, `scripts/generate_resume.rb`, `latexmkrc` ou o `Makefile` mudar, gere todos os perfis:
+Quando `main.tex`, qualquer gerador, `latexmkrc` ou o `Makefile` mudar, gere todos os artefatos:
 
 ```bash
 make todos
 ```
 
 Os alvos do Make tambem regeneram os previews PNG.
+
+Quando a fonte inglesa mudar sem alteracao no perfil em portugues, execute pelo menos:
+
+```bash
+make api
+```
 
 5. Valide os PDFs para ATS/modelos de IA:
 
@@ -98,7 +107,7 @@ Document resume workflow
 Antes de commitar:
 
 ```bash
-git diff -- Makefile main.tex main-geral.tex curriculos/curriculo.yaml curriculos/curriculo-geral.yaml README.md AGENTS.md scripts/generate_resume.rb latexmkrc TODO-PROJETOS.md LOG-TO-DO.md
+git diff -- Makefile main.tex main-geral.tex curriculos/curriculo.yaml curriculos/curriculo-en.yaml curriculos/curriculo-geral.yaml README.md AGENTS.md scripts/generate_resume.rb scripts/generate_resume_json.rb wrangler.jsonc latexmkrc TODO-PROJETOS.md LOG-TO-DO.md
 git status --short --untracked-files=all
 ```
 

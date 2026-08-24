@@ -6,3 +6,5 @@
 *.synctex.gz
 *.odt
 .DS_Store
+/dist/
+/.wrangler/

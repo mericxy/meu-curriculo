@@ -45,3 +45,55 @@ jobs:
           pdfinfo main-geral.pdf | grep -q '^Pages: *1$'
           pdftotext main.pdf - | grep -q 'Resumo Profissional'
           pdftotext main-geral.pdf - | grep -q 'Resumo Profissional'
+
+      - name: Validate static API
+        run: |
+          ruby -rjson -e '
+            data = JSON.parse(File.read("dist/api/v1/curriculo.json"))
+            abort "schemaVersion invalido" unless data["schemaVersion"] == 1
+            abort "locale pt-BR ausente" unless data.dig("locales", "pt-BR")
+            abort "locale en ausente" unless data.dig("locales", "en")
+          '
+
+  deploy-api:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Generate static API
+        run: make api
+
+      - name: Deploy static API
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.125.0"
+
+      - name: Verify published API
+        run: |
+          for attempt in {1..30}; do
+            if curl --fail --silent --show-error \
+              https://api.meric.dev.br/v1/curriculo.json \
+              --output /tmp/curriculo.json \
+              && ruby -rjson -e '
+                data = JSON.parse(File.read("/tmp/curriculo.json"))
+                abort unless data.dig("source", "commit") == ENV.fetch("GITHUB_SHA")
+              '; then
+              exit 0
+            fi
+
+            sleep 10
+          done
+
+          exit 1

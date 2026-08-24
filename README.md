@@ -4,7 +4,7 @@
 [![Latest release](https://img.shields.io/github/v/release/mericxy/meu-curriculo?label=release)](https://github.com/mericxy/meu-curriculo/releases/latest)
 [![License](https://img.shields.io/github/license/mericxy/meu-curriculo)](LICENSE)
 
-Crie currículos em PDF a partir de conteúdo YAML e de um layout LaTeX simples, legível e compatível com sistemas ATS. Este repositório também mantém os currículos de Marcio Valente e uma [versão web interativa](https://meric.dev.br/resume/).
+Crie currículos em PDF e JSON a partir de conteúdo YAML. Os PDFs usam um layout LaTeX simples, legível e compatível com sistemas ATS. Este repositório também mantém os currículos de Marcio Valente e uma [versão web interativa](https://meric.dev.br/resume/).
 
 ## Crie seu currículo
 
@@ -34,15 +34,28 @@ Ao criar seu próprio currículo, substitua os dados pessoais, links, experiênc
 
 ![Preview do currículo geral](preview-geral.png)
 
+## API estática
+
+O perfil de software está disponível em português e inglês como JSON estático versionado:
+
+```text
+https://api.meric.dev.br/v1/curriculo.json
+```
+
+`curriculos/curriculo.yaml` e `curriculos/curriculo-en.yaml` são validados e convertidos pelo script `scripts/generate_resume_json.rb`. Em pushes para `main`, o GitHub Actions publica o resultado em um Cloudflare Worker que serve somente assets estáticos.
+
+O documento possui `schemaVersion`, metadados da fonte e os conteúdos `pt-BR` e `en`. A entrega utiliza os headers padrão de Workers Static Assets, incluindo `Cache-Control: public, max-age=0, must-revalidate` e `ETag`.
+
 ## Comandos
 
 | Comando | Resultado |
 | --- | --- |
 | `make` ou `make software` | Gera `main.pdf` e `preview.png` usando `curriculos/curriculo.yaml`. |
 | `make geral` | Gera `main-geral.pdf` e `preview-geral.png` usando `curriculos/curriculo-geral.yaml`. |
-| `make todos` | Atualiza as duas versões e seus previews. |
+| `make api` | Valida os YAMLs português e inglês e gera `dist/api/v1/curriculo.json`. |
+| `make todos` | Atualiza os dois PDFs, seus previews e a API estática. |
 
-A conversão de YAML usa Ruby e sua biblioteca padrão, sem gems adicionais. O Make verifica as datas dos arquivos e repete apenas as etapas necessárias.
+A conversão de YAML usa Ruby e sua biblioteca padrão, sem gems adicionais. O Make verifica as datas dos arquivos e repete apenas as etapas necessárias. O diretório `dist/` é gerado localmente e não é versionado.
 
 ## Adicionar outro perfil
 

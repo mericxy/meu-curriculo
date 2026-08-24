@@ -1,0 +1,140 @@
+# English source for the static resume API. Keep it equivalent to curriculo.yaml.
+pessoal:
+  nome: Marcio Valente
+  titulo: "Software Developer | Full Stack | Frontend"
+  email: eric.melv42@gmail.com
+  telefone: "(92) 99514-4499"
+  localizacao: "Manaus, Amazonas, Brazil"
+  linkedin:
+    url: https://www.linkedin.com/in/marcioericlvalente
+    texto: linkedin.com/in/marcioericlvalente
+  github:
+    url: https://www.github.com/mericxy
+    texto: github.com/mericxy
+
+resumo: >-
+  Software developer with a solid frontend foundation and experience in web applications
+  involving API integration, data visualization, backend development, and deployment. I am
+  interested in growing into a broader full stack role, bringing development, infrastructure,
+  and DevOps practices closer together while maintaining a focus on readability, maintainability,
+  and user experience. In the Motorola/UFAM research project (MOB4AI), I work on analytical
+  dashboards, frontend architecture, stack selection, server deployment, and usability improvements.
+
+competencias:
+  - categoria: Frontend and UI
+    itens:
+      - JavaScript
+      - TypeScript
+      - HTML5
+      - CSS3
+      - React
+      - React Hooks
+      - Vite
+      - Tailwind CSS
+      - Figma
+  - categoria: Backend and APIs
+    itens:
+      - Python
+      - FastAPI
+      - Django
+      - Node.js
+      - NestJS
+      - PostgreSQL
+      - REST API consumption and integration
+  - categoria: Data and visualization
+    itens:
+      - Apache ECharts
+      - Highcharts
+      - dashboards
+      - interactive charts
+      - data analysis
+  - categoria: Infrastructure and DevOps
+    itens:
+      - Docker
+      - server deployment
+      - Git
+      - GitHub Actions
+      - documentation
+      - incremental delivery
+  - categoria: Quality and collaboration
+    itens:
+      - Vitest
+      - testing in React applications
+      - component testing
+      - Pytest
+      - Jira
+      - agile teamwork
+      - task organization
+
+experiencias:
+  - cargo: Frontend Developer
+    periodo: May/2025 -- Present
+    organizacao: "MOB4AI | Motorola/UFAM research project"
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Developed interactive React interfaces for visualizing real-world data in a research project conducted in partnership between Motorola and UFAM.
+      - Improved the user experience of analytical dashboards, focusing on navigation, readability, and interaction between data visualizations.
+      - Built data-driven features using visualization libraries such as Apache ECharts and Highcharts.
+      - Contributed to frontend architecture decisions, stack selection for new tools, and server deployment in collaboration with other teams.
+  - cargo: Intern
+    periodo: Nov/2024 -- May/2025
+    organizacao: CETAM
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Provided technical and administrative support in a corporate environment, developing organization, communication, operational problem-solving, and adaptability to professional routines.
+
+projetos:
+  - nome: DocParse
+    links:
+      - url: https://docparse.meric.dev.br/
+        texto: docparse.meric.dev.br
+      - url: https://github.com/mericxy/DocParse
+        texto: github.com/mericxy/DocParse
+    tecnologias:
+      - Python
+      - FastAPI
+      - PyMuPDF
+      - Tesseract OCR
+      - SQLite
+      - React
+      - TypeScript
+      - Vite
+      - Docker
+    descricao: Web application for processing, OCR, and transcription of employment documents (time cards and pay stubs) into spreadsheets and JSON. Built with an asynchronous pipeline (FastAPI, PyMuPDF, and a SQLite worker), a React/TypeScript review interface, and Docker Compose deployment.
+  - nome: ReservaUFAM
+    links:
+      - url: https://github.com/mericxy/ReservaUFAM
+        texto: github.com/mericxy/ReservaUFAM
+    tecnologias:
+      - Docker
+      - Python
+      - Django
+      - PostgreSQL
+      - React
+      - Tailwind CSS
+      - Vite
+    descricao: Team project developed for UFAM courses to centralize institutional resource reservations. I worked as a frontend developer, contributing React, Tailwind CSS, and Vite interfaces integrated with application features.
+  - nome: NAVIR Web
+    links:
+      - url: https://github.com/navir-ufam/NAVIR-Web
+        texto: github.com/navir-ufam/NAVIR-Web
+    tecnologias:
+      - React
+      - TypeScript
+      - Vite
+      - NestJS
+      - PostgreSQL
+      - Jira
+    descricao: Internal system with real-world use for UFAM's NAVIR laboratory. As tech lead, I co-lead the technical work, supporting architecture decisions, task organization, and the development of modules for academic management, access control, dashboards, and reports.
+
+educacao:
+  - curso: Bachelor's Degree in Software Engineering
+    periodo: "Oct/2022 -- Expected graduation: Jan/2027"
+    instituicao: Federal University of Amazonas
+    localizacao: "Manaus, Amazonas"
+
+idiomas:
+  - idioma: Portuguese
+    nivel: Native
+  - idioma: English
+    nivel: Intermediate for reading technical documentation, everyday writing, and functional communication
