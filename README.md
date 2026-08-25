@@ -6,20 +6,6 @@
 
 Crie currículos em PDF e JSON a partir de conteúdo YAML. Os PDFs usam um layout LaTeX simples, legível e compatível com sistemas ATS. Este repositório também mantém os currículos de Marcio Valente e uma [versão web interativa](https://meric.dev.br/resume/).
 
-## Crie seu currículo
-
-Você precisa de Ruby, GNU Make, uma distribuição LaTeX com `latexmk` e Poppler (`pdftoppm`). Depois, execute:
-
-```bash
-git clone https://github.com/mericxy/meu-curriculo.git && cd meu-curriculo
-${EDITOR:-nano} curriculos/curriculo.yaml
-make software
-```
-
-O currículo será gerado em `main.pdf`, com um preview em `preview.png`. Edite apenas o YAML; `curriculo.tex` é um arquivo intermediário gerado automaticamente.
-
-Ao criar seu próprio currículo, substitua os dados pessoais, links, experiências e projetos de `curriculos/curriculo.yaml`. Remova também os artefatos pessoais que não quiser manter no seu repositório.
-
 ## Currículos publicados
 
 ### Perfil de software
@@ -34,6 +20,20 @@ Ao criar seu próprio currículo, substitua os dados pessoais, links, experiênc
 
 ![Preview do currículo geral](preview-geral.png)
 
+## Crie seu currículo
+
+Você precisa de Ruby, GNU Make, uma distribuição LaTeX com `latexmk` e Poppler (`pdftoppm`). Depois, execute:
+
+```bash
+git clone https://github.com/mericxy/meu-curriculo.git && cd meu-curriculo
+${EDITOR:-nano} curriculos/curriculo.yaml
+make software
+```
+
+O currículo será gerado em `main.pdf`, com um preview em `preview.png`. Edite apenas o YAML; `curriculo.tex` é um arquivo intermediário gerado automaticamente.
+
+Ao criar seu próprio currículo, substitua os dados pessoais, links, experiências e projetos de `curriculos/curriculo.yaml`. Remova também os artefatos pessoais que não quiser manter no seu repositório.
+
 ## API estática
 
 O perfil de software está disponível em português e inglês como JSON estático versionado:
@@ -45,6 +45,25 @@ https://api.meric.dev.br/v1/curriculo.json
 `curriculos/curriculo.yaml` e `curriculos/curriculo-en.yaml` são validados e convertidos pelo script `scripts/generate_resume_json.rb`. Em pushes para `main`, o GitHub Actions publica o resultado em um Cloudflare Worker que serve somente assets estáticos.
 
 O documento possui `schemaVersion`, metadados da fonte e os conteúdos `pt-BR` e `en`. A entrega utiliza os headers padrão de Workers Static Assets, incluindo `Cache-Control: public, max-age=0, must-revalidate` e `ETag`.
+
+## Automação com o portfólio
+
+O currículo web em [meric.dev.br/resume/](https://meric.dev.br/resume/) consome a API durante o build do Astro. Não existe servidor de currículo nem `fetch` no navegador: os dados validados são incorporados ao HTML estático em português e inglês.
+
+```mermaid
+flowchart LR
+    PUSH["Push em main"] --> CI["GitHub Actions"]
+    CI --> VALIDATE["Valida PDFs e JSON bilíngue"]
+    VALIDATE --> API["Publica a API no Cloudflare Worker"]
+    API --> CHECK["Confere o commit publicado"]
+    CHECK --> HOOK["Aciona o Deploy Hook"]
+    HOOK --> ASTRO["Cloudflare reconstrói o portfólio"]
+    ASTRO --> PAGES["Astro gera /resume/ e /en/resume/"]
+```
+
+O job `deploy-api` só executa após o build completo passar. Depois de publicar `curriculo.json`, ele aguarda o endpoint retornar o mesmo commit do GitHub Actions e então chama o Deploy Hook do [repositório do portfólio](https://github.com/mericxy/portfolio). Durante esse novo build, o portfólio busca o JSON, valida `schemaVersion: 1` e gera as duas páginas estáticas. Se a API estiver indisponível ou incompatível, o build falha e a versão anterior do site permanece publicada.
+
+A automação usa os repository secrets `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` e `PORTFOLIO_DEPLOY_HOOK_URL`. Seus valores não são armazenados no repositório.
 
 ## Comandos
 
