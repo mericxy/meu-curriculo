@@ -100,7 +100,8 @@ lines = [
     "{#{tex_escape(field(personal, 'telefone', 'pessoal'))}}" \
     "{#{tex_escape(field(personal, 'localizacao', 'pessoal'))}}" \
     "{#{link(personal['linkedin'], 'pessoal.linkedin')}}" \
-    "{#{link(personal['github'], 'pessoal.github')}}",
+    "{#{link(personal['github'], 'pessoal.github')}}" \
+    "{#{link(personal['site'], 'pessoal.site')}}",
   "",
   "\\sectiontitle{Resumo Profissional}",
   "\\resumeparagraph{#{tex_escape(field(root, 'resumo', 'raiz'))}}",

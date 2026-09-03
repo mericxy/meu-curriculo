@@ -11,14 +11,16 @@ pessoal:
   github:
     url: https://www.github.com/mericxy
     texto: github.com/mericxy
+  site:
+    url: https://meric.dev.br
+    texto: meric.dev.br
 
 resumo: >-
-  Software developer with a solid frontend foundation and experience in web applications
-  involving API integration, data visualization, backend development, and deployment. I am
-  interested in growing into a broader full stack role, bringing development, infrastructure,
-  and DevOps practices closer together while maintaining a focus on readability, maintainability,
-  and user experience. In the Motorola/UFAM research project (MOB4AI), I work on analytical
-  dashboards, frontend architecture, stack selection, server deployment, and usability improvements.
+  Full stack software developer with experience in web applications, API integration, data
+  visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA,
+  developing solutions with Python, FastAPI, and React while contributing to architecture,
+  requirements, and database modeling. I also worked on the Motorola/UFAM research project
+  (MOB4AI), focusing on analytical dashboards and frontend architecture.
 
 competencias:
   - categoria: Frontend and UI
@@ -67,21 +69,27 @@ competencias:
       - task organization
 
 experiencias:
-  - cargo: Frontend Developer
-    periodo: May/2025 -- Present
-    organizacao: "MOB4AI | Motorola/UFAM research project"
+  - cargo: Full Stack Software Development Intern
+    periodo: Sep/2026 -- Present
+    organizacao: "4º Centro de Telemática de Área (4º CTA) | Brazilian Army"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Developed interactive React interfaces for visualizing real-world data in a research project conducted in partnership between Motorola and UFAM.
-      - Improved the user experience of analytical dashboards, focusing on navigation, readability, and interaction between data visualizations.
-      - Built data-driven features using visualization libraries such as Apache ECharts and Highcharts.
-      - Contributed to frontend architecture decisions, stack selection for new tools, and server deployment in collaboration with other teams.
+      - Develop full stack web applications using Python and FastAPI on the backend and React on the frontend.
+      - Contribute to architectural decisions, requirements gathering, and database modeling.
+  - cargo: Frontend Developer
+    periodo: May/2025 -- Aug/2026
+    organizacao: "MOB4AI | Motorola/UFAM research project"
+    localizacao: "Itacoatiara, Amazonas"
+    realizacoes:
+      - Developed React interfaces and analytical dashboards to visualize real-world data in the Motorola/UFAM research project.
+      - Improved visualization navigation, readability, and interaction using Apache ECharts and Highcharts.
+      - Contributed to frontend architecture decisions, stack selection, and server deployment with other teams.
   - cargo: Intern
     periodo: Nov/2024 -- May/2025
     organizacao: CETAM
-    localizacao: "Manaus, Amazonas"
+    localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Provided technical and administrative support in a corporate environment, developing organization, communication, operational problem-solving, and adaptability to professional routines.
+      - Provided technical and administrative support, strengthening organization, communication, and operational problem-solving skills.
 
 projetos:
   - nome: DocParse
@@ -131,7 +139,7 @@ educacao:
   - curso: Bachelor's Degree in Software Engineering
     periodo: "Oct/2022 -- Expected graduation: Jan/2027"
     instituicao: Federal University of Amazonas
-    localizacao: "Manaus, Amazonas"
+    localizacao: "Itacoatiara, Amazonas"
 
 idiomas:
   - idioma: Portuguese

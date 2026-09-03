@@ -67,7 +67,8 @@ def project_resume(data, locale)
       "location" => field(personal, "localizacao", "#{locale}.pessoal"),
       "links" => {
         "linkedin" => project_link(personal["linkedin"], "#{locale}.pessoal.linkedin"),
-        "github" => project_link(personal["github"], "#{locale}.pessoal.github")
+        "github" => project_link(personal["github"], "#{locale}.pessoal.github"),
+        "site" => project_link(personal["site"], "#{locale}.pessoal.site")
       }
     },
     "summary" => field(root, "resumo", locale),
@@ -142,7 +143,7 @@ def validate_locale_parity(portuguese, english)
     fail_with("personal.#{field_name} deve ser igual nos dois idiomas")
   end
 
-  %w[linkedin github].each do |link_name|
+  %w[linkedin github site].each do |link_name|
     portuguese_url = portuguese.dig("personal", "links", link_name, "url")
     english_url = english.dig("personal", "links", link_name, "url")
     fail_with("personal.links.#{link_name}.url deve ser igual nos dois idiomas") unless portuguese_url == english_url
