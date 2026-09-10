@@ -92,6 +92,20 @@ experiencias:
       - Provided technical and administrative support, strengthening organization, communication, and operational problem-solving skills.
 
 projetos:
+  - nome: Currículo Pipeline
+    links:
+      - url: https://meric.dev.br/resume/
+        texto: meric.dev.br/resume/
+      - url: https://github.com/mericxy/meu-curriculo
+        texto: github.com/mericxy/meu-curriculo
+    tecnologias:
+      - Ruby
+      - YAML
+      - LaTeX
+      - GitHub Actions
+      - Cloudflare Workers
+      - Astro
+    descricao: ATS resume generator in YAML and LaTeX with a bilingual JSON API validated and published to a Cloudflare Worker. The resume website uses the API during the Astro build to generate static Portuguese and English pages.
   - nome: DocParse
     links:
       - url: https://docparse.meric.dev.br/
