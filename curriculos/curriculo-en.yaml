@@ -18,9 +18,10 @@ pessoal:
 resumo: >-
   Full stack software developer with experience in web applications, API integration, data
   visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA,
-  developing solutions with Python, FastAPI, and React while contributing to architecture,
-  requirements, and database modeling. I also worked on the Motorola/UFAM research project
-  (MOB4AI), focusing on analytical dashboards and frontend architecture.
+  with Python, FastAPI, and React, contributing to architecture, requirements, and data
+  modeling. I also worked on the Motorola/UFAM research project (MOB4AI), with analytical
+  dashboards and frontend architecture, and I use and orchestrate AI agents throughout the
+  development workflow.
 
 competencias:
   - categoria: Frontend and UI
@@ -43,6 +44,11 @@ competencias:
       - NestJS
       - PostgreSQL
       - REST API consumption and integration
+  - categoria: AI and development agents
+    itens:
+      - use and orchestration of AI agents in the development workflow (opencode and Codex)
+      - orchestrating multiple agents in parallel, subagents, and MCP integration
+      - planning, persistent agent instructions (AGENTS.md), task automation, AI-assisted code review, and validation with tests and lint
   - categoria: Data and visualization
     itens:
       - Apache ECharts

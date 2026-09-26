@@ -18,9 +18,9 @@ pessoal:
 resumo: >-
   Desenvolvedor de software full stack com experiência em aplicações web, integração de
   APIs, visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro,
-  desenvolvendo soluções com Python, FastAPI e React e contribuindo para arquitetura,
-  requisitos e modelagem de banco de dados. Também participei do projeto Motorola/UFAM
-  (MOB4AI), com atuação em dashboards analíticos e arquitetura frontend.
+  com Python, FastAPI e React, contribuindo para arquitetura, requisitos e modelagem de
+  dados. Também participei do projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
+  arquitetura frontend, e utilizo e orquestro agentes de IA no fluxo de desenvolvimento.
 
 competencias:
   - categoria: Frontend e UI
@@ -43,6 +43,11 @@ competencias:
       - NestJS
       - PostgreSQL
       - consumo e integração de APIs REST
+  - categoria: IA e agentes de desenvolvimento
+    itens:
+      - uso e orquestração de agentes de IA no fluxo de desenvolvimento (opencode e Codex)
+      - orquestração de múltiplos agentes em paralelo, subagentes e integração via MCP
+      - planejamento, instruções persistentes (AGENTS.md), automação de tarefas, revisão de código e validação com testes e lint
   - categoria: Dados e visualização
     itens:
       - Apache ECharts
