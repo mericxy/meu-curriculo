@@ -20,7 +20,7 @@ resumo: >-
   com experiência em desenvolvimento de sistemas web, apoio técnico e administrativo,
   organização de demandas, documentação e resolução de problemas. Atuo no 4º CTA do Exército
   Brasileiro, desenvolvendo aplicações full stack com Python, FastAPI e React e contribuindo
-  para arquitetura, requisitos e modelagem de banco de dados. Também participei de projeto
+  para arquitetura, requisitos e modelagem de banco de dados. Também atuo em projeto
   de pesquisa Motorola/UFAM, trabalhando com ferramentas e dashboards analíticos.
 
 competencias:
@@ -70,13 +70,13 @@ experiencias:
       - Desenvolvo aplicações web full stack com Python e FastAPI no backend e React no frontend.
       - Contribuo para decisões arquiteturais, levantamento de requisitos e modelagem de banco de dados.
   - cargo: Frontend Developer
-    periodo: Mai/2025 -- Ago/2026
+    periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Desenvolvi interfaces e dashboards analíticos em React para visualização de dados reais no projeto de pesquisa Motorola/UFAM.
-      - Aprimorei navegação, legibilidade e interação das visualizações com Apache ECharts e Highcharts.
-      - Contribuí para decisões de arquitetura frontend, definição de stack e deploy em servidor com outros times.
+      - Desenvolvo interfaces e dashboards analíticos em React para visualização de dados reais no projeto de pesquisa Motorola/UFAM.
+      - Aprimoro navegação, legibilidade e interação das visualizações com Apache ECharts e Highcharts.
+      - Contribuo para decisões de arquitetura frontend, definição de stack e deploy em servidor com outros times.
   - cargo: Estagiário
     periodo: Nov/2024 -- Mai/2025
     organizacao: CETAM
@@ -116,7 +116,7 @@ idiomas:
   - idioma: Português
     nivel: Nativo
   - idioma: Inglês
-    nivel: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional
+    nivel: Intermediário (B1)
 
 informacoes_adicionais:
   - titulo: Carteira Nacional de Habilitação (CNH)

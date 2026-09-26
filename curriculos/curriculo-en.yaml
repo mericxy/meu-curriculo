@@ -19,7 +19,7 @@ resumo: >-
   Full stack software developer with experience in web applications, API integration, data
   visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA,
   with Python, FastAPI, and React, contributing to architecture, requirements, and data
-  modeling. I also worked on the Motorola/UFAM research project (MOB4AI), with analytical
+  modeling. I also work on the Motorola/UFAM research project (MOB4AI), with analytical
   dashboards and frontend architecture, and I use and orchestrate AI agents throughout the
   development workflow.
 
@@ -83,13 +83,13 @@ experiencias:
       - Develop full stack web applications using Python and FastAPI on the backend and React on the frontend.
       - Contribute to architectural decisions, requirements gathering, and database modeling.
   - cargo: Frontend Developer
-    periodo: May/2025 -- Aug/2026
+    periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Developed React interfaces and analytical dashboards to visualize real-world data in the Motorola/UFAM research project.
-      - Improved visualization navigation, readability, and interaction using Apache ECharts and Highcharts.
-      - Contributed to frontend architecture decisions, stack selection, and server deployment with other teams.
+      - Develop React interfaces and analytical dashboards to visualize real-world data in the Motorola/UFAM research project.
+      - Improve visualization navigation, readability, and interaction using Apache ECharts and Highcharts.
+      - Contribute to frontend architecture decisions, stack selection, and server deployment with other teams.
   - cargo: Intern
     periodo: Nov/2024 -- May/2025
     organizacao: CETAM
@@ -165,4 +165,4 @@ idiomas:
   - idioma: Portuguese
     nivel: Native
   - idioma: English
-    nivel: Intermediate for reading technical documentation, everyday writing, and functional communication
+    nivel: Intermediate (B1)

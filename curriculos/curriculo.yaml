@@ -19,7 +19,7 @@ resumo: >-
   Desenvolvedor de software full stack com experiência em aplicações web, integração de
   APIs, visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro,
   com Python, FastAPI e React, contribuindo para arquitetura, requisitos e modelagem de
-  dados. Também participei do projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
+  dados. Também atuo no projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
   arquitetura frontend, e utilizo e orquestro agentes de IA no fluxo de desenvolvimento.
 
 competencias:
@@ -82,13 +82,13 @@ experiencias:
       - Desenvolvo aplicações web full stack com Python e FastAPI no backend e React no frontend.
       - Contribuo para decisões arquiteturais, levantamento de requisitos e modelagem de banco de dados.
   - cargo: Frontend Developer
-    periodo: Mai/2025 -- Ago/2026
+    periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Desenvolvi interfaces e dashboards analíticos em React para visualização de dados reais no projeto de pesquisa Motorola/UFAM.
-      - Aprimorei navegação, legibilidade e interação das visualizações com Apache ECharts e Highcharts.
-      - Contribuí para decisões de arquitetura frontend, definição de stack e deploy em servidor com outros times.
+      - Desenvolvo interfaces e dashboards analíticos em React para visualização de dados reais no projeto de pesquisa Motorola/UFAM.
+      - Aprimoro navegação, legibilidade e interação das visualizações com Apache ECharts e Highcharts.
+      - Contribuo para decisões de arquitetura frontend, definição de stack e deploy em servidor com outros times.
   - cargo: Estagiário
     periodo: Nov/2024 -- Mai/2025
     organizacao: CETAM
@@ -164,4 +164,4 @@ idiomas:
   - idioma: Português
     nivel: Nativo
   - idioma: Inglês
-    nivel: Intermediário para leitura de documentação técnica, escrita no dia a dia e comunicação funcional
+    nivel: Intermediário (B1)
