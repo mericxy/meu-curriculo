@@ -83,6 +83,7 @@ experiencias:
     realizacoes:
       - Atuo em uma equipe de 5 pessoas no desenvolvimento de um sistema que digitaliza a demanda de recursos do 4º CTA e suas 63 OMs, substituindo um processo manual em planilha que retornava em média 5 vezes por ciclo — meta de reduzir para no máximo 1.
       - Assumo a referência técnica da equipe (5 pessoas), definindo arquitetura e stack (FastAPI, Celery, Valkey, PostgreSQL) e organizando backlog e decisões técnicas, com validação direta do cliente.
+      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR — pipeline com centenas de testes automatizados e tempo médio de ~1m40s por execução.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"

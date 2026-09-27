@@ -84,6 +84,7 @@ experiencias:
     realizacoes:
       - Contribute in a 5-person team building a system that digitizes resource demand for the 4º CTA and its 63 MOs, replacing a manual spreadsheet process that bounced back 5 times on average per cycle — targeting at most 1.
       - Serve as the team's technical reference (5 people), defining architecture and stack (FastAPI, Celery, Valkey, PostgreSQL) and organizing backlog and technical decisions, with direct client validation.
+      - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR — pipeline with hundreds of automated tests averaging ~1m40s per run.
   - cargo: Frontend Developer
     periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"
