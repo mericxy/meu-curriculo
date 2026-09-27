@@ -17,9 +17,9 @@ pessoal:
 
 resumo: >-
   Full stack software developer with experience in web applications, API integration, data
-  visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA,
-  with Python, FastAPI, and React, contributing to architecture, requirements, and data
-  modeling. I also work on the Motorola/UFAM research project (MOB4AI), with analytical
+  visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA
+  as technical reference for a 5-person team, defining architecture and stack (Python,
+  FastAPI, React) and organizing backlog and technical decisions. I also work on the Motorola/UFAM research project (MOB4AI), with analytical
   dashboards and frontend architecture, and I use and orchestrate AI agents throughout the
   development workflow.
 
@@ -87,8 +87,8 @@ experiencias:
     organizacao: "MOB4AI | Motorola/UFAM research project"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contributed to the frontend architecture and stack selection for handling large data volumes (hundreds of megabytes) in interactive real-time charts and tables.
-      - Joined the team behind performance features in Apache ECharts (update pause, dynamic zoom).
+      - Contribute to the frontend architecture and stack selection for handling large data volumes (hundreds of megabytes) in interactive real-time charts and tables.
+      - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom).
       - Dashboards used by Motorola and Eldorado (Motorola partner) researchers for mobile device data analysis.
   - cargo: Intern
     periodo: Nov/2024 -- May/2025

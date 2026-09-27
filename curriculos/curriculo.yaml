@@ -17,9 +17,9 @@ pessoal:
 
 resumo: >-
   Desenvolvedor de software full stack com experiência em aplicações web, integração de
-  APIs, visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro,
-  com Python, FastAPI e React, contribuindo para arquitetura, requisitos e modelagem de
-  dados. Também atuo no projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
+  APIs, visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro
+  como referência técnica de uma equipe de 5 pessoas, definindo arquitetura e stack
+  (Python, FastAPI, React) e organizando backlog e decisões técnicas. Também atuo no projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
   arquitetura frontend, e utilizo e orquestro agentes de IA no fluxo de desenvolvimento.
 
 competencias:
@@ -86,8 +86,8 @@ experiencias:
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribuí na arquitetura frontend e na escolha de stack para lidar com grandes volumes de dados (centenas de megabytes) em gráficos e tabelas interativas com atualização em tempo real.
-      - Integrei o time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
+      - Contribuo na arquitetura frontend e na escolha de stack para lidar com grandes volumes de dados (centenas de megabytes) em gráficos e tabelas interativas com atualização em tempo real.
+      - Integro o time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
       - Dashboards usados por pesquisadores da Motorola e da Eldorado (parceira da Motorola) para análise de dados de dispositivos móveis.
   - cargo: Estagiário
     periodo: Nov/2024 -- Mai/2025
