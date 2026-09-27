@@ -43,6 +43,9 @@ competencias:
       - Node.js
       - NestJS
       - PostgreSQL
+      - SQLAlchemy
+      - Celery
+      - Valkey
       - REST API consumption and integration
   - categoria: AI applied to development
     itens:
@@ -72,6 +75,7 @@ competencias:
       - testing in React applications
       - component testing
       - Pytest
+      - Playwright
       - Jira
       - agile teamwork
       - task organization

@@ -42,6 +42,9 @@ competencias:
       - Node.js
       - NestJS
       - PostgreSQL
+      - SQLAlchemy
+      - Celery
+      - Valkey
       - consumo e integração de APIs REST
   - categoria: IA aplicada ao desenvolvimento
     itens:
@@ -71,6 +74,7 @@ competencias:
       - testes em aplicações React
       - testes de componentes
       - Pytest
+      - Playwright
       - Jira
       - trabalho em equipe ágil
       - organização de demandas
