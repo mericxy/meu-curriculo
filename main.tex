@@ -6,7 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazilian]{babel}
-\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage[a4paper,margin=1.15cm]{geometry}
 \usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -24,11 +24,12 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{0.93}
 \color{textgray}
 
 \newcommand{\sectiontitle}[1]{%
-  \vspace{4pt}
-  {\large\bfseries\color{accent} #1}\par
+  \vspace{2pt}
+  {\normalsize\bfseries\color{accent} #1}\par
   \vspace{1pt}
   {\color{accent}\hrule height 0.7pt}
   \vspace{2pt}
@@ -37,21 +38,18 @@
 \newcommand{\role}[4]{%
   \textbf{#1} | #2\par
   \textit{#3} | \textit{#4}\par
-  \vspace{1pt}
 }
 
 \newcommand{\project}[3]{%
   \textbf{#1}\par
   \textit{#2}\par
   #3\par
-  \vspace{1pt}
 }
 
-\newcommand{\achievement}[1]{-- #1\par\vspace{1pt}}
+\newcommand{\achievement}[1]{-- #1\par}
 
 \newcommand{\skill}[2]{%
   \textbf{#1:} #2\par
-  \vspace{1pt}
 }
 
 \newcommand{\resumeheader}[8]{%

@@ -80,16 +80,16 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Brazilian Army"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Develop full stack web applications using Python and FastAPI on the backend and React on the frontend.
-      - Contribute to architectural decisions, requirements gathering, and database modeling.
+      - Contribute in a 5-person team building a system that digitizes resource demand for the 4º CTA and its 63 MOs, replacing a manual spreadsheet process that bounced back 5 times on average per cycle — targeting at most 1.
+      - Serve as the team's technical reference (5 people), defining architecture and stack (FastAPI, Celery, Valkey, PostgreSQL) and organizing backlog and technical decisions, with direct client validation.
   - cargo: Frontend Developer
     periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Develop React interfaces and analytical dashboards to visualize real-world data in the Motorola/UFAM research project.
-      - Improve visualization navigation, readability, and interaction using Apache ECharts and Highcharts.
-      - Contribute to frontend architecture decisions, stack selection, and server deployment with other teams.
+      - Contributed to the frontend architecture and stack selection for handling large data volumes (hundreds of megabytes) in interactive real-time charts and tables.
+      - Joined the team behind performance features in Apache ECharts (update pause, dynamic zoom).
+      - Dashboards used by Motorola and Eldorado (Motorola partner) researchers for mobile device data analysis.
   - cargo: Intern
     periodo: Nov/2024 -- May/2025
     organizacao: CETAM
@@ -153,7 +153,7 @@ projetos:
       - NestJS
       - PostgreSQL
       - Jira
-    descricao: Internal system with real-world use for UFAM's NAVIR laboratory. As tech lead, I co-lead the technical work, supporting architecture decisions, task organization, and the development of modules for academic management, access control, dashboards, and reports.
+    descricao: Co-lead a 15-person technical team on NAVIR Web (UFAM), organizing architecture and documentation for an academic management system.
 
 educacao:
   - curso: Bachelor's Degree in Software Engineering

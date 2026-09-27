@@ -67,16 +67,16 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Desenvolvo aplicações web full stack com Python e FastAPI no backend e React no frontend.
-      - Contribuo para decisões arquiteturais, levantamento de requisitos e modelagem de banco de dados.
+      - Atuo em uma equipe de 5 pessoas no desenvolvimento de um sistema que digitaliza a demanda de recursos do 4º CTA e suas 63 OMs, substituindo um processo manual em planilha que retornava em média 5 vezes por ciclo — meta de reduzir para no máximo 1.
+      - Assumo a referência técnica da equipe (5 pessoas), definindo arquitetura e stack (FastAPI, Celery, Valkey, PostgreSQL) e organizando backlog e decisões técnicas, com validação direta do cliente.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Desenvolvo interfaces e dashboards analíticos em React para visualização de dados reais no projeto de pesquisa Motorola/UFAM.
-      - Aprimoro navegação, legibilidade e interação das visualizações com Apache ECharts e Highcharts.
-      - Contribuo para decisões de arquitetura frontend, definição de stack e deploy em servidor com outros times.
+      - Contribuí na arquitetura frontend e na escolha de stack para lidar com grandes volumes de dados (centenas de megabytes) em gráficos e tabelas interativas com atualização em tempo real.
+      - Integrei o time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
+      - Dashboards usados por pesquisadores da Motorola e da Eldorado (parceira da Motorola) para análise de dados de dispositivos móveis.
   - cargo: Estagiário
     periodo: Nov/2024 -- Mai/2025
     organizacao: CETAM
@@ -104,7 +104,7 @@ projetos:
       - url: https://github.com/navir-ufam/NAVIR-Web
         texto: github.com/navir-ufam/NAVIR-Web
     subtitulo: "Sistema de gestão acadêmica | Liderança técnica"
-    descricao: Sistema interno do laboratório NAVIR da UFAM. Como tech lead, colidero a frente técnica, apoiando decisões de arquitetura, organização de demandas e desenvolvimento de módulos para gestão acadêmica, controle de acesso, dashboards e relatórios.
+    descricao: Co-lidero equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando arquitetura e documentação de um sistema de gestão acadêmica.
 
 educacao:
   - curso: Bacharelado em Engenharia de Software
