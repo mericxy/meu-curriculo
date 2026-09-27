@@ -92,12 +92,6 @@ experiencias:
       - Contribute to the frontend architecture and stack selection for handling large data volumes (hundreds of megabytes) in interactive real-time charts and tables.
       - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom).
       - Dashboards used by Motorola and Eldorado (Motorola partner) researchers for mobile device data analysis.
-  - cargo: Intern
-    periodo: Nov/2024 -- May/2025
-    organizacao: CETAM
-    localizacao: "Itacoatiara, Amazonas"
-    realizacoes:
-      - Provided technical and administrative support, strengthening organization, communication, and operational problem-solving skills.
 
 projetos:
   - nome: Currículo Pipeline
