@@ -1,7 +1,7 @@
 # English source for the static resume API. Keep it equivalent to curriculo.yaml.
 pessoal:
   nome: Marcio Valente
-  titulo: "Software Developer | Full Stack | Frontend"
+  titulo: "Full Stack Developer | React | Node.js | Python"
   email: eric.melv42@gmail.com
   telefone: "(92) 99514-4499"
   localizacao: "Manaus, Amazonas, Brazil"
@@ -44,11 +44,13 @@ competencias:
       - NestJS
       - PostgreSQL
       - REST API consumption and integration
-  - categoria: AI and development agents
+  - categoria: AI applied to development
     itens:
-      - use and orchestration of AI agents in the development workflow (opencode and Codex)
-      - orchestrating multiple agents in parallel, subagents, and MCP integration
-      - planning, persistent agent instructions (AGENTS.md), task automation, AI-assisted code review, and validation with tests and lint
+      - use and orchestration of AI agents
+      - MCP
+      - task automation
+      - code review
+      - software validation support
   - categoria: Data and visualization
     itens:
       - Apache ECharts
@@ -129,6 +131,18 @@ projetos:
       - Vite
       - Docker
     descricao: Web application for processing, OCR, and transcription of employment documents (time cards and pay stubs) into spreadsheets and JSON. Built with an asynchronous pipeline (FastAPI, PyMuPDF, and a SQLite worker), a React/TypeScript review interface, and Docker Compose deployment.
+  - nome: NAVIR Web
+    links:
+      - url: https://github.com/navir-ufam/NAVIR-Web
+        texto: github.com/navir-ufam/NAVIR-Web
+    tecnologias:
+      - React
+      - TypeScript
+      - Vite
+      - NestJS
+      - PostgreSQL
+      - Jira
+    descricao: Co-lead a 15-person technical team on NAVIR Web (UFAM), organizing architecture and documentation for an academic management system.
   - nome: ReservaUFAM
     links:
       - url: https://github.com/mericxy/ReservaUFAM
@@ -142,18 +156,6 @@ projetos:
       - Tailwind CSS
       - Vite
     descricao: Team project developed for UFAM courses to centralize institutional resource reservations. I worked as a frontend developer, contributing React, Tailwind CSS, and Vite interfaces integrated with application features.
-  - nome: NAVIR Web
-    links:
-      - url: https://github.com/navir-ufam/NAVIR-Web
-        texto: github.com/navir-ufam/NAVIR-Web
-    tecnologias:
-      - React
-      - TypeScript
-      - Vite
-      - NestJS
-      - PostgreSQL
-      - Jira
-    descricao: Co-lead a 15-person technical team on NAVIR Web (UFAM), organizing architecture and documentation for an academic management system.
 
 educacao:
   - curso: Bachelor's Degree in Software Engineering
