@@ -16,11 +16,12 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Desenvolvedor de software full stack com experiência em aplicações web, integração de
-  APIs, visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro
-  como referência técnica de uma equipe de 5 pessoas, definindo arquitetura e stack
-  (Python, FastAPI, React) e organizando backlog e decisões técnicas. Também atuo no projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e
-  arquitetura frontend, e utilizo e orquestro agentes de IA no fluxo de desenvolvimento.
+  Desenvolvedor full stack com experiência em aplicações web, integração de APIs,
+  visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro
+  em um time de 5 estagiários, onde escrevo tasks, organizo o backlog e ajudo a
+  manter o time alinhado, com stack em Python, FastAPI e React. Também atuo no
+  projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e arquitetura frontend,
+  e uso agentes de IA no desenvolvimento.
 
 competencias:
   - categoria: Frontend e UI
@@ -85,17 +86,17 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Atuo em uma equipe de 5 pessoas no desenvolvimento de um sistema que digitaliza a demanda de recursos do 4º CTA e suas 63 OMs, substituindo um processo manual em planilha que retornava em média 5 vezes por ciclo — meta de reduzir para no máximo 1.
-      - Assumo a referência técnica da equipe (5 pessoas), definindo arquitetura e stack (FastAPI, Celery, Valkey, PostgreSQL) e organizando backlog e decisões técnicas, com validação direta do cliente.
-      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR — pipeline com centenas de testes automatizados e tempo médio de ~1m40s por execução.
+      - Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
+      - No time de 5 estagiários, escrevo as tasks, organizo o backlog e ajudo a manter o pessoal alinhado. O projeto usa FastAPI, Celery, Valkey e PostgreSQL, e tratamos dos requisitos em conversa direta com o cliente (4º CTA).
+      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR; o pipeline tem mais de 500 testes automatizados e leva em média ~1m40s por execução.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribuo na arquitetura frontend e na escolha de stack para lidar com grandes volumes de dados (centenas de megabytes) em gráficos e tabelas interativas com atualização em tempo real.
-      - Integro o time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
-      - Dashboards usados por pesquisadores da Motorola e da Eldorado (parceira da Motorola) para análise de dados de dispositivos móveis.
+      - Contribuo na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
+      - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
+      - Pesquisadores da Motorola e da Eldorado (parceira da Motorola) usam os dashboards para análise de dados de dispositivos móveis.
 
 projetos:
   - nome: Currículo Pipeline
@@ -128,7 +129,7 @@ projetos:
       - TypeScript
       - Vite
       - Docker
-    descricao: Aplicação web para processamento, OCR e transcrição de documentos trabalhistas (cartões de ponto e holerites) em planilhas e JSON. Desenvolvida com pipeline assíncrono (FastAPI, PyMuPDF, worker em SQLite), interface de revisão em React/TypeScript e deploy com Docker Compose.
+    descricao: Aplicação web para processamento, OCR e transcrição de documentos trabalhistas (cartões de ponto e holerites) em planilhas e JSON. Usa pipeline assíncrono (FastAPI, PyMuPDF, worker em SQLite), interface de revisão em React/TypeScript e deploy com Docker Compose.
   - nome: NAVIR Web
     links:
       - url: https://github.com/navir-ufam/NAVIR-Web
@@ -140,7 +141,7 @@ projetos:
       - NestJS
       - PostgreSQL
       - Jira
-    descricao: Co-lidero equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando arquitetura e documentação de um sistema de gestão acadêmica.
+    descricao: Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando a arquitetura e a documentação de um sistema de gestão acadêmica.
   - nome: ReservaUFAM
     links:
       - url: https://github.com/mericxy/ReservaUFAM
@@ -153,7 +154,7 @@ projetos:
       - React
       - Tailwind CSS
       - Vite
-    descricao: Projeto em equipe desenvolvido para disciplinas da UFAM para centralizar reservas de recursos institucionais. Atuei como desenvolvedor frontend, contribuindo para interfaces em React, Tailwind CSS e Vite integradas a funcionalidades.
+    descricao: Projeto em equipe para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei como desenvolvedor frontend, com interfaces em React, Tailwind CSS e Vite integradas às funcionalidades.
 
 educacao:
   - curso: Bacharelado em Engenharia de Software

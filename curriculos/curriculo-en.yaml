@@ -18,10 +18,9 @@ pessoal:
 resumo: >-
   Full stack software developer with experience in web applications, API integration, data
   visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA
-  as technical reference for a 5-person team, defining architecture and stack (Python,
-  FastAPI, React) and organizing backlog and technical decisions. I also work on the Motorola/UFAM research project (MOB4AI), with analytical
-  dashboards and frontend architecture, and I use and orchestrate AI agents throughout the
-  development workflow.
+  on a 5-intern team, where I write tasks, organize the backlog, and help keep everyone
+  aligned. The stack includes Python, FastAPI, and React. I also work on the Motorola/UFAM
+  research project (MOB4AI), with analytical dashboards and frontend architecture, and I use AI agents in development.
 
 competencias:
   - categoria: Frontend and UI
@@ -86,17 +85,17 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Brazilian Army"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Contribute in a 5-person team building a system that digitizes resource demand for the 4º CTA and its 63 MOs, replacing a manual spreadsheet process that bounced back 5 times on average per cycle — targeting at most 1.
-      - Serve as the team's technical reference (5 people), defining architecture and stack (FastAPI, Celery, Valkey, PostgreSQL) and organizing backlog and technical decisions, with direct client validation.
-      - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR — pipeline with hundreds of automated tests averaging ~1m40s per run.
+      - System under development to digitize resource demand for the 4º CTA and its 63 MOs, currently handled in a spreadsheet averaging 5 returns per cycle, aiming to reduce that to at most 1.
+      - On a 5-intern team; I write the tasks, organize the backlog, and help keep everyone aligned. The project uses FastAPI, Celery, Valkey, and PostgreSQL, and we discuss requirements directly with the client (4º CTA).
+      - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR; the pipeline runs over 500 automated tests averaging ~1m40s per run.
   - cargo: Frontend Developer
     periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribute to the frontend architecture and stack selection for handling large data volumes (hundreds of megabytes) in interactive real-time charts and tables.
+      - Contribute to the frontend architecture and stack selection for handling hundreds of megabytes in interactive real-time charts and tables.
       - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom).
-      - Dashboards used by Motorola and Eldorado (Motorola partner) researchers for mobile device data analysis.
+      - Motorola and Eldorado (a Motorola partner) researchers use the dashboards for mobile device data analysis.
 
 projetos:
   - nome: Currículo Pipeline
@@ -129,7 +128,7 @@ projetos:
       - TypeScript
       - Vite
       - Docker
-    descricao: Web application for processing, OCR, and transcription of employment documents (time cards and pay stubs) into spreadsheets and JSON. Built with an asynchronous pipeline (FastAPI, PyMuPDF, and a SQLite worker), a React/TypeScript review interface, and Docker Compose deployment.
+    descricao: Web application for processing, OCR, and transcription of employment documents (time cards and pay stubs) into spreadsheets and JSON. It uses an asynchronous pipeline (FastAPI, PyMuPDF, and a SQLite worker), a React/TypeScript review interface, and Docker Compose deployment.
   - nome: NAVIR Web
     links:
       - url: https://github.com/navir-ufam/NAVIR-Web
@@ -154,7 +153,7 @@ projetos:
       - React
       - Tailwind CSS
       - Vite
-    descricao: Team project developed for UFAM courses to centralize institutional resource reservations. I worked as a frontend developer, contributing React, Tailwind CSS, and Vite interfaces integrated with application features.
+    descricao: Team project for UFAM courses that centralizes institutional resource reservations. I worked as a frontend developer, building React, Tailwind CSS, and Vite interfaces integrated with the application features.
 
 educacao:
   - curso: Bachelor's Degree in Software Engineering
