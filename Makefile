@@ -1,5 +1,8 @@
 .PHONY: all software geral api todos
 
+TYPST = typst compile --root . --font-path fonts --ignore-system-fonts
+LAYOUT = curriculo.typ $(wildcard fonts/*.otf)
+
 all: software
 
 software: main.pdf preview.png
@@ -13,20 +16,14 @@ todos: software geral api
 dist/api/v1/curriculo.json: curriculos/curriculo.yaml curriculos/curriculo-en.yaml scripts/generate_resume_json.rb
 	ruby scripts/generate_resume_json.rb curriculos/curriculo.yaml curriculos/curriculo-en.yaml $@
 
-curriculo.tex: curriculos/curriculo.yaml scripts/generate_resume.rb
-	ruby scripts/generate_resume.rb curriculos/curriculo.yaml curriculo.tex
+main.pdf: curriculos/curriculo.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< curriculo.typ $@
 
-main.pdf: main.tex curriculo.tex
-	latexmk -pdf -g main.tex
+preview.png: curriculos/curriculo.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< --format png --ppi 160 curriculo.typ $@
 
-preview.png: main.pdf
-	pdftoppm -png -singlefile -r 160 main.pdf preview
+main-geral.pdf: curriculos/curriculo-geral.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< curriculo.typ $@
 
-curriculo-geral.tex: curriculos/curriculo-geral.yaml scripts/generate_resume.rb
-	ruby scripts/generate_resume.rb curriculos/curriculo-geral.yaml curriculo-geral.tex
-
-main-geral.pdf: main-geral.tex main.tex curriculo-geral.tex
-	latexmk -pdf -g main-geral.tex
-
-preview-geral.png: main-geral.pdf
-	pdftoppm -png -singlefile -r 160 main-geral.pdf preview-geral
+preview-geral.png: curriculos/curriculo-geral.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< --format png --ppi 160 curriculo.typ $@
