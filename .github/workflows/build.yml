@@ -23,16 +23,15 @@ jobs:
         with:
           ruby-version: "3.3"
 
-      - name: Install document dependencies
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.15.1"
+
+      - name: Install PDF tools
         run: |
           sudo apt-get update
-          sudo apt-get install --no-install-recommends \
-            latexmk \
-            lmodern \
-            poppler-utils \
-            texlive-lang-portuguese \
-            texlive-latex-base \
-            texlive-latex-recommended
+          sudo apt-get install --no-install-recommends poppler-utils
 
       - name: Build all resumes
         run: make todos
