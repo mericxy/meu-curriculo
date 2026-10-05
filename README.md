@@ -4,13 +4,13 @@
 [![Latest release](https://img.shields.io/github/v/release/mericxy/meu-curriculo?label=release)](https://github.com/mericxy/meu-curriculo/releases/latest)
 [![License](https://img.shields.io/github/license/mericxy/meu-curriculo)](LICENSE)
 
-O conteúdo do currículo vive em YAML. Cada push em `main` dispara um pipeline que valida os dados, compila os PDFs em LaTeX (layout simples, compatível com ATS), gera uma API JSON bilíngue, publica tudo num Cloudflare Worker e reconstrói o portfólio com as páginas atualizadas — sem etapa manual.
+O conteúdo do currículo vive em YAML. Cada push em `main` dispara um pipeline que valida os dados, compila os PDFs em Typst (layout simples, compatível com ATS), gera uma API JSON bilíngue, publica tudo num Cloudflare Worker e reconstrói o portfólio com as páginas atualizadas — sem etapa manual.
 
 ```mermaid
 flowchart LR
     PUSH["Push em main"] --> CI["GitHub Actions"]
     CI --> VALIDATE["Valida YAMLs PT/EN"]
-    VALIDATE --> PDF["Compila PDFs em LaTeX"]
+    VALIDATE --> PDF["Compila PDFs em Typst"]
     VALIDATE --> JSON["Gera curriculo.json bilíngue"]
     JSON --> API["Publica a API no Cloudflare Worker"]
     API --> CHECK["Confere o commit publicado"]
@@ -41,7 +41,7 @@ https://api.meric.dev.br/v1/curriculo.json
 
 ## Uso local
 
-Você precisa de Ruby, GNU Make, uma distribuição LaTeX com `latexmk` e Poppler (`pdftoppm`). Depois, execute:
+Você precisa de [Typst](https://typst.app), GNU Make e Ruby (este só para a API JSON). Depois, execute:
 
 ```bash
 git clone https://github.com/mericxy/meu-curriculo.git && cd meu-curriculo
@@ -49,7 +49,7 @@ ${EDITOR:-nano} curriculos/curriculo.yaml
 make software
 ```
 
-O currículo será gerado em `main.pdf`, com um preview em `preview.png`. Edite apenas o YAML; `curriculo.tex` é um arquivo intermediário gerado automaticamente.
+O currículo será gerado em `main.pdf`, com um preview em `preview.png`. Edite apenas o YAML; o layout em `curriculo.typ` lê os dados diretamente, sem arquivos intermediários.
 
 Ao criar seu próprio currículo, substitua os dados pessoais, links, experiências e projetos de `curriculos/curriculo.yaml`. Remova também os artefatos pessoais que não quiser manter no seu repositório.
 
@@ -60,11 +60,11 @@ Ao criar seu próprio currículo, substitua os dados pessoais, links, experiênc
 | `make api` | Valida os YAMLs português e inglês e gera `dist/api/v1/curriculo.json`. |
 | `make todos` | Atualiza os dois PDFs, seus previews e a API estática. |
 
-A conversão de YAML usa Ruby e sua biblioteca padrão, sem gems adicionais. O Make verifica as datas dos arquivos e repete apenas as etapas necessárias. O diretório `dist/` é gerado localmente e não é versionado.
+Os PDFs e previews são gerados pelo Typst a partir de `curriculo.typ`, com as fontes Latin Modern Sans versionadas em `fonts/`, então o resultado não depende das fontes instaladas na máquina. A API JSON usa Ruby e sua biblioteca padrão, sem gems adicionais. O Make verifica as datas dos arquivos e repete apenas as etapas necessárias. O diretório `dist/` é gerado localmente e não é versionado.
 
 ## Adicionar outro perfil
 
-Crie `curriculos/curriculo-<perfil>.yaml` e um pequeno `main-<perfil>.tex` que selecione esses dados e inclua `main.tex`. Em seguida, adicione ao `Makefile` um alvo equivalente a `geral`. Dessa forma, cada perfil mantém conteúdo próprio e reutiliza o mesmo layout.
+Crie `curriculos/curriculo-<perfil>.yaml` e adicione ao `Makefile` um alvo equivalente a `geral`, passando o novo YAML com `--input dados=...`. Dessa forma, cada perfil mantém conteúdo próprio e reutiliza o mesmo layout.
 
 ## Desenvolvimento
 

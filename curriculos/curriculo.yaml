@@ -1,4 +1,4 @@
-# Perfil de software: fonte de conteúdo; o layout permanece em main.tex.
+# Perfil de software: fonte de conteúdo; o layout permanece em curriculo.typ.
 pessoal:
   nome: Marcio Valente
   titulo: "Desenvolvedor Full Stack | React | Node.js | Python"
@@ -107,11 +107,11 @@ projetos:
     tecnologias:
       - Ruby
       - YAML
-      - LaTeX
+      - Typst
       - GitHub Actions
       - Cloudflare Workers
       - Astro
-    descricao: Gerador ATS em YAML e LaTeX com API JSON bilíngue validada e publicada no Cloudflare Worker. O site do currículo usa a API no build do Astro para gerar versões estáticas em português e inglês.
+    descricao: Gerador ATS em YAML e Typst com API JSON bilíngue validada e publicada no Cloudflare Worker. O site do currículo usa a API no build do Astro para gerar versões estáticas em português e inglês.
   - nome: DocParse
     links:
       - url: https://docparse.meric.dev.br/

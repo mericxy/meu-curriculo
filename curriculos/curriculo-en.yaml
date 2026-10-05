@@ -108,11 +108,11 @@ projetos:
     tecnologias:
       - Ruby
       - YAML
-      - LaTeX
+      - Typst
       - GitHub Actions
       - Cloudflare Workers
       - Astro
-    descricao: ATS resume generator in YAML and LaTeX with a bilingual JSON API validated and published to a Cloudflare Worker. The resume website uses the API during the Astro build to generate static Portuguese and English pages.
+    descricao: ATS resume generator in YAML and Typst with a bilingual JSON API validated and published to a Cloudflare Worker. The resume website uses the API during the Astro build to generate static Portuguese and English pages.
   - nome: DocParse
     links:
       - url: https://docparse.meric.dev.br/

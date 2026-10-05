@@ -1,9 +1,3 @@
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz
 *.odt
 .DS_Store
 /dist/
