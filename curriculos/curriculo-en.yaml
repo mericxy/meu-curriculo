@@ -16,11 +16,10 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Full stack software developer with experience in web applications, API integration, data
-  visualization, backend development, and deployment. I work at the Brazilian Army's 4º CTA
-  on a 5-intern team, where I write tasks, organize the backlog, and help keep everyone
-  aligned. The stack includes Python, FastAPI, and React. I also work on the Motorola/UFAM
-  research project (MOB4AI), with analytical dashboards and frontend architecture, and I use AI agents in development.
+  Full stack developer working from requirements gathering to deployment, focused on
+  applications that handle large volumes of data and on quality backed by automated tests
+  and CI. I combine Python backends with React and TypeScript interfaces and use AI agents
+  daily to speed up development and code review.
 
 competencias:
   - categoria: Frontend and UI

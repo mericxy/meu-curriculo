@@ -16,12 +16,10 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Profissional de tecnologia da informação e estudante de Engenharia de Software,
-  com experiência em desenvolvimento de sistemas web, apoio técnico e administrativo,
-  organização de demandas, documentação e resolução de problemas. Atuo no 4º CTA do Exército
-  Brasileiro, desenvolvendo aplicações full stack com Python, FastAPI e React e contribuindo
-  para arquitetura, requisitos e modelagem de banco de dados. Também atuo em projeto
-  de pesquisa Motorola/UFAM, trabalhando com ferramentas e dashboards analíticos.
+  Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza:
+  traduzo necessidades de usuários em requisitos, organizo demandas e documento soluções
+  para que time e cliente acompanhem o andamento. Experiência em ambientes institucionais
+  (Exército Brasileiro, UFAM e CETAM) e em projeto de pesquisa com dados de alto volume.
 
 competencias:
   - categoria: Suporte e operações

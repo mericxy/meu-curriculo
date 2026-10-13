@@ -3,17 +3,9 @@ Tecnologia da Informação | Sistemas | Suporte Técnico
 eric.melv42@gmail.com | (92) 99514-4499 | Manaus, Amazonas, Brasil
 linkedin.com/in/marcioericlvalente | github.com/mericxy | meric.dev.br
 Resumo Profissional
-Profissional de tecnologia da informação e estudante de Engenharia de Software, com experiência em desenvolvimento de sistemas
-web, apoio técnico e administrativo, organização de demandas, documentação e resolução de problemas. Atuo no 4º CTA do
-Exército Brasileiro, desenvolvendo aplicações full stack com Python, FastAPI e React e contribuindo para arquitetura, requisitos
-e modelagem de banco de dados. Também atuo em projeto de pesquisa Motorola/UFAM, trabalhando com ferramentas e
-dashboards analíticos.
-Competências Técnicas
-Suporte e operações: apoio técnico, resolução de problemas, organização de rotinas, documentação e atendimento de
-demandas.
-Sistemas e dados: aplicações web, integração de APIs, dashboards, visualização de dados, PostgreSQL e deploy em servidor.
-Desenvolvimento: React, JavaScript, TypeScript, Python, Django, FastAPI, Node.js, HTML5 e CSS3.
-Ferramentas e processos: Git, GitHub, Docker, Jira, Figma, testes de software, trabalho em equipe ágil e entregas incrementais.
+Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza: traduzo necessidades de usuários em requisitos,
+organizo demandas e documento soluções para que time e cliente acompanhem o andamento. Experiência em ambientes
+institucionais (Exército Brasileiro, UFAM e CETAM) e em projeto de pesquisa com dados de alto volume.
 Experiência Profissional
 Estagiário em Desenvolvimento de Software Full Stack | Set/2026 – Presente
 4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro | Manaus, Amazonas
@@ -44,6 +36,12 @@ NAVIR Web | github.com/navir-ufam/NAVIR-Web
 Sistema de gestão acadêmica | Liderança técnica
 Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando a arquitetura e a documentação de um sistema
 de gestão acadêmica.
+Competências Técnicas
+Suporte e operações: apoio técnico, resolução de problemas, organização de rotinas, documentação e atendimento de
+demandas.
+Sistemas e dados: aplicações web, integração de APIs, dashboards, visualização de dados, PostgreSQL e deploy em servidor.
+Desenvolvimento: React, JavaScript, TypeScript, Python, Django, FastAPI, Node.js, HTML5 e CSS3.
+Ferramentas e processos: Git, GitHub, Docker, Jira, Figma, testes de software, trabalho em equipe ágil e entregas incrementais.
 Educação
 Bacharelado em Engenharia de Software | Out/2022 – Conclusão prevista: Jan/2027
 Universidade Federal do Amazonas | Itacoatiara, Amazonas

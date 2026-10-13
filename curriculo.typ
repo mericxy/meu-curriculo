@@ -57,11 +57,6 @@
 #secao[Resumo Profissional]
 #t(dados.resumo)
 
-#secao[Competências Técnicas]
-#for c in dados.competencias [
-  *#t(c.categoria):* #frase(c.itens) \
-]
-
 #secao[Experiência Profissional]
 #for (i, e) in dados.experiencias.enumerate() {
   if i > 0 { v(4pt) }
@@ -77,6 +72,11 @@
   [*#t(pr.nome) | #pr.links.map(ligacao).join(" | ")* \ _#subtitulo _ \ #t(pr.descricao)]
   parbreak()
 }
+
+#secao[Competências Técnicas]
+#for c in dados.competencias [
+  *#t(c.categoria):* #frase(c.itens) \
+]
 
 #secao[Educação]
 #for (i, ed) in dados.educacao.enumerate() {

@@ -16,12 +16,10 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Desenvolvedor full stack com experiência em aplicações web, integração de APIs,
-  visualização de dados, backend e deploy. Atuo no 4º CTA do Exército Brasileiro
-  em um time de 5 estagiários, onde escrevo tasks, organizo o backlog e ajudo a
-  manter o time alinhado, com stack em Python, FastAPI e React. Também atuo no
-  projeto Motorola/UFAM (MOB4AI), com dashboards analíticos e arquitetura frontend,
-  e uso agentes de IA no desenvolvimento.
+  Desenvolvedor full stack que atua do levantamento de requisitos ao deploy, com foco
+  em aplicações que lidam com grande volume de dados e em qualidade garantida por testes
+  automatizados e CI. Combino backend em Python com interfaces em React e TypeScript e
+  uso agentes de IA no dia a dia para acelerar desenvolvimento e revisão de código.
 
 competencias:
   - categoria: Frontend e UI
