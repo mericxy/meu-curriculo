@@ -66,6 +66,17 @@ Os PDFs e previews são gerados pelo Typst a partir de `curriculo.typ`, com as f
 
 Crie `curriculos/curriculo-<perfil>.yaml` e adicione ao `Makefile` um alvo equivalente a `geral`, passando o novo YAML com `--input dados=...`. Dessa forma, cada perfil mantém conteúdo próprio e reutiliza o mesmo layout.
 
+## Carta de apresentação
+
+`carta.typ` gera a carta de apresentação com o mesmo cabeçalho, fontes e cores do currículo. O cabeçalho vem do YAML do currículo (`--input dados=...`) e o corpo de um YAML da carta (`--input carta=...`) com `local_data`, `assunto`, `saudacao`, `paragrafos` e `despedida`. Exemplo em `candidatura/`:
+
+```bash
+typst compile --root . --font-path fonts --ignore-system-fonts \
+  --input dados=candidatura/curriculo-asc-solutions-estagio.yaml \
+  --input carta=candidatura/carta-asc-solutions-estagio.yaml \
+  carta.typ candidatura/Marcio-Valente-cover-letter.pdf
+```
+
 ## Desenvolvimento
 
 A arquitetura interna, o fluxo de compilação manual e as regras para contribuir estão em [CONTRIBUTING.md](CONTRIBUTING.md). Pull requests são validados pelo workflow de build, que compila os dois perfis e verifica se os PDFs estão em A4 e se `main-geral.pdf` continua com uma página.
