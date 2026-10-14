@@ -2,52 +2,63 @@ Marcio Valente
 Tecnologia da Informação | Sistemas | Suporte Técnico
 eric.melv42@gmail.com | (92) 99514-4499 | Manaus, Amazonas, Brasil
 linkedin.com/in/marcioericlvalente | github.com/mericxy | meric.dev.br
+
 Resumo Profissional
-Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza: traduzo necessidades de usuários em requisitos,
-organizo demandas e documento soluções para que time e cliente acompanhem o andamento. Experiência em ambientes
-institucionais (Exército Brasileiro, UFAM e CETAM) e em projeto de pesquisa com dados de alto volume.
+Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza: traduzo necessidades
+de usuários em requisitos, organizo demandas e documento soluções. Experiência no Exército Brasileiro, na
+UFAM e no CETAM e em pesquisa com dados de alto volume.
+
 Experiência Profissional
 Estagiário em Desenvolvimento de Software Full Stack | Set/2026 – Presente
 4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro | Manaus, Amazonas
-– Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com
-média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
-– Faço parte de um time de 5 estagiários; escrevo as tasks, organizo o backlog e ajudo a manter o time alinhado. O projeto usa
-FastAPI, Celery, Valkey e PostgreSQL, com conversa direta sobre os requisitos com o cliente (4º CTA).
+
+– Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita
+em planilha, com meta de reduzir de 5 retornos por ciclo para no máximo 1.
+– Escrevo as tasks, organizo o backlog e ajudo a manter o time de 5 estagiários alinhado, com requisitos
+tratados em conversa direta com o cliente. Stack em FastAPI, Celery, Valkey e PostgreSQL.
 Frontend Developer | Mai/2025 – Presente
 MOB4AI | Projeto de pesquisa Motorola/UFAM | Itacoatiara, Amazonas
-– Contribuí na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas
-com atualização em tempo real.
-– Fiz parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
-– Pesquisadores da Motorola e da Eldorado (parceira da Motorola) usam os dashboards para análise de dados de dispositivos
-móveis.
+
+– Atuo na arquitetura frontend e na escolha de stack para gráficos e tabelas interativas com centenas de
+megabytes em tempo real, incluindo melhorias de performance no Apache ECharts.
+– Dashboards usados por pesquisadores da Motorola e da Eldorado na análise de dados de dispositivos móveis.
 Estagiário | Nov/2024 – Mai/2025
 CETAM | Itacoatiara, Amazonas
-– Prestei apoio técnico e administrativo, fortalecendo organização, comunicação e resolução de problemas operacionais.
+
+– Apoio técnico e administrativo, com organização, comunicação e resolução de problemas operacionais.
+
 Projetos
 DocParse | docparse.meric.dev.br | github.com/mericxy/DocParse
 Processamento e transcrição de documentos | Full Stack e OCR
-Aplicação web para leitura, OCR e extração estruturada de dados de cartões de ponto e holerites em PDF para planilhas. Usa
-processamento assíncrono em Python, interface de conferência em React e deploy conteinerizado com Docker.
+
+Aplicação web para OCR e extração de dados de cartões de ponto e holerites em PDF para planilhas, com
+processamento assíncrono em Python, conferência em React e deploy com Docker.
 ReservaUFAM | github.com/mericxy/ReservaUFAM
 Sistema de reservas institucionais | Projeto em equipe
-Projeto para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei na construção das interfaces e na
-integração das funcionalidades do sistema.
+
+Projeto para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei nas interfaces e na
+integração das funcionalidades.
 NAVIR Web | github.com/navir-ufam/NAVIR-Web
 Sistema de gestão acadêmica | Liderança técnica
-Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando a arquitetura e a documentação de um sistema
-de gestão acadêmica.
+
+Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando arquitetura e documentação
+do sistema.
+
 Competências Técnicas
-Suporte e operações: apoio técnico, resolução de problemas, organização de rotinas, documentação e atendimento de
-demandas.
-Sistemas e dados: aplicações web, integração de APIs, dashboards, visualização de dados, PostgreSQL e deploy em servidor.
+Suporte e operações: apoio técnico, resolução de problemas, organização de rotinas, documentação e
+atendimento de demandas.
+Sistemas e dados: aplicações web, integração de APIs, dashboards, visualização de dados, PostgreSQL e
+deploy em servidor.
 Desenvolvimento: React, JavaScript, TypeScript, Python, Django, FastAPI, Node.js, HTML5 e CSS3.
-Ferramentas e processos: Git, GitHub, Docker, Jira, Figma, testes de software, trabalho em equipe ágil e entregas incrementais.
+Ferramentas e processos: Git, GitHub, Docker, Jira, Figma, testes de software e trabalho em equipe ágil.
+
 Educação
 Bacharelado em Engenharia de Software | Out/2022 – Conclusão prevista: Jan/2027
 Universidade Federal do Amazonas | Itacoatiara, Amazonas
+
 Idiomas
-Português: Nativo
-Inglês: Intermediário (B1)
+Português: Nativo | Inglês: Intermediário (B1)
+
 Informações Adicionais
 Carteira Nacional de Habilitação (CNH): categorias A e B
 

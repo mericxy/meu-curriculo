@@ -16,10 +16,9 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza:
-  traduzo necessidades de usuários em requisitos, organizo demandas e documento soluções
-  para que time e cliente acompanhem o andamento. Experiência em ambientes institucionais
-  (Exército Brasileiro, UFAM e CETAM) e em projeto de pesquisa com dados de alto volume.
+  Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza: traduzo
+  necessidades de usuários em requisitos, organizo demandas e documento soluções. Experiência
+  no Exército Brasileiro, na UFAM e no CETAM e em pesquisa com dados de alto volume.
 
 competencias:
   - categoria: Suporte e operações
@@ -57,7 +56,6 @@ competencias:
       - Figma
       - testes de software
       - trabalho em equipe ágil
-      - entregas incrementais
 
 experiencias:
   - cargo: Estagiário em Desenvolvimento de Software Full Stack
@@ -65,22 +63,21 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
-      - Faço parte de um time de 5 estagiários; escrevo as tasks, organizo o backlog e ajudo a manter o time alinhado. O projeto usa FastAPI, Celery, Valkey e PostgreSQL, com conversa direta sobre os requisitos com o cliente (4º CTA).
+      - Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com meta de reduzir de 5 retornos por ciclo para no máximo 1.
+      - Escrevo as tasks, organizo o backlog e ajudo a manter o time de 5 estagiários alinhado, com requisitos tratados em conversa direta com o cliente. Stack em FastAPI, Celery, Valkey e PostgreSQL.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribuí na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
-      - Fiz parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
-      - Pesquisadores da Motorola e da Eldorado (parceira da Motorola) usam os dashboards para análise de dados de dispositivos móveis.
+      - Atuo na arquitetura frontend e na escolha de stack para gráficos e tabelas interativas com centenas de megabytes em tempo real, incluindo melhorias de performance no Apache ECharts.
+      - Dashboards usados por pesquisadores da Motorola e da Eldorado na análise de dados de dispositivos móveis.
   - cargo: Estagiário
     periodo: Nov/2024 -- Mai/2025
     organizacao: CETAM
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Prestei apoio técnico e administrativo, fortalecendo organização, comunicação e resolução de problemas operacionais.
+      - Apoio técnico e administrativo, com organização, comunicação e resolução de problemas operacionais.
 
 projetos:
   - nome: DocParse
@@ -90,19 +87,19 @@ projetos:
       - url: https://github.com/mericxy/DocParse
         texto: github.com/mericxy/DocParse
     subtitulo: "Processamento e transcrição de documentos | Full Stack e OCR"
-    descricao: Aplicação web para leitura, OCR e extração estruturada de dados de cartões de ponto e holerites em PDF para planilhas. Usa processamento assíncrono em Python, interface de conferência em React e deploy conteinerizado com Docker.
+    descricao: Aplicação web para OCR e extração de dados de cartões de ponto e holerites em PDF para planilhas, com processamento assíncrono em Python, conferência em React e deploy com Docker.
   - nome: ReservaUFAM
     links:
       - url: https://github.com/mericxy/ReservaUFAM
         texto: github.com/mericxy/ReservaUFAM
     subtitulo: "Sistema de reservas institucionais | Projeto em equipe"
-    descricao: Projeto para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei na construção das interfaces e na integração das funcionalidades do sistema.
+    descricao: Projeto para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei nas interfaces e na integração das funcionalidades.
   - nome: NAVIR Web
     links:
       - url: https://github.com/navir-ufam/NAVIR-Web
         texto: github.com/navir-ufam/NAVIR-Web
     subtitulo: "Sistema de gestão acadêmica | Liderança técnica"
-    descricao: Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando a arquitetura e a documentação de um sistema de gestão acadêmica.
+    descricao: Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando arquitetura e documentação do sistema.
 
 educacao:
   - curso: Bacharelado em Engenharia de Software

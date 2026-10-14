@@ -39,7 +39,6 @@ jobs:
       - name: Validate PDFs
         run: |
           pdfinfo main.pdf | grep -q '^Page size:.*A4'
-          pdfinfo main.pdf | grep -q '^Pages: *1$'
           pdfinfo main-geral.pdf | grep -q '^Page size:.*A4'
           pdfinfo main-geral.pdf | grep -q '^Pages: *1$'
           pdftotext main.pdf - | grep -q 'Resumo Profissional'

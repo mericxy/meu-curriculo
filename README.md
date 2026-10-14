@@ -22,7 +22,7 @@ flowchart LR
 ## Como funciona
 
 1. Você edita só o YAML (`curriculos/curriculo.yaml` e `curriculos/curriculo-en.yaml`).
-2. O job `build` valida os dois arquivos, compila os PDFs (`main.pdf` e `main-geral.pdf`, sempre 1 página A4) e gera `dist/api/v1/curriculo.json` com `schemaVersion`.
+2. O job `build` valida os dois arquivos, compila os PDFs (`main.pdf` em A4, podendo ter mais de uma página; `main-geral.pdf` sempre em 1 página A4) e gera `dist/api/v1/curriculo.json` com `schemaVersion`.
 3. O job `deploy-api` (só roda se o build passar) publica o JSON no Cloudflare Worker, espera o endpoint retornar o mesmo commit e chama o Deploy Hook do [repositório do portfólio](https://github.com/mericxy/portfolio).
 4. O portfólio busca o JSON no build do Astro, valida `schemaVersion: 1` e gera as páginas estáticas em português e inglês. Não há servidor de currículo nem `fetch` no navegador. Se a API estiver indisponível ou incompatível, o build falha e a versão anterior do site continua no ar.
 
@@ -49,13 +49,13 @@ ${EDITOR:-nano} curriculos/curriculo.yaml
 make software
 ```
 
-O currículo será gerado em `main.pdf`, com um preview em `preview.png`. Edite apenas o YAML; o layout em `curriculo.typ` lê os dados diretamente, sem arquivos intermediários.
+O currículo será gerado em `main.pdf`, com um preview por página (`preview-1.png`, `preview-2.png`...). Edite apenas o YAML; o layout em `curriculo.typ` lê os dados diretamente, sem arquivos intermediários.
 
 Ao criar seu próprio currículo, substitua os dados pessoais, links, experiências e projetos de `curriculos/curriculo.yaml`. Remova também os artefatos pessoais que não quiser manter no seu repositório.
 
 | Comando | Resultado |
 | --- | --- |
-| `make` ou `make software` | Gera `main.pdf` e `preview.png` usando `curriculos/curriculo.yaml`. |
+| `make` ou `make software` | Gera `main.pdf` e `preview-<página>.png` usando `curriculos/curriculo.yaml`. |
 | `make geral` | Gera `main-geral.pdf` e `preview-geral.png` usando `curriculos/curriculo-geral.yaml`. |
 | `make api` | Valida os YAMLs português e inglês e gera `dist/api/v1/curriculo.json`. |
 | `make todos` | Atualiza os dois PDFs, seus previews e a API estática. |
@@ -68,7 +68,7 @@ Crie `curriculos/curriculo-<perfil>.yaml` e adicione ao `Makefile` um alvo equiv
 
 ## Desenvolvimento
 
-A arquitetura interna, o fluxo de compilação manual e as regras para contribuir estão em [CONTRIBUTING.md](CONTRIBUTING.md). Pull requests são validados pelo workflow de build, que compila os dois perfis e verifica se os PDFs continuam com uma página em formato A4.
+A arquitetura interna, o fluxo de compilação manual e as regras para contribuir estão em [CONTRIBUTING.md](CONTRIBUTING.md). Pull requests são validados pelo workflow de build, que compila os dois perfis e verifica se os PDFs estão em A4 e se `main-geral.pdf` continua com uma página.
 
 ## Licença
 

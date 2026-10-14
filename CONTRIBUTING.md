@@ -47,7 +47,7 @@ flowchart LR
 2. Execute `make software` ou `make geral` quando alterar conteúdo.
 3. Execute `make api` ao alterar a fonte inglesa ou o gerador JSON.
 4. Execute `make todos` quando alterar o layout, as fontes, o gerador JSON ou o `Makefile`.
-5. Confirme que o texto pode ser extraído, que cada PDF permanece em uma página A4 e que o JSON contém os dois idiomas.
+5. Confirme que o texto pode ser extraído, que os PDFs estão em A4 e que `main-geral.pdf` permanece em uma página (só `main.pdf` pode ter mais de uma) e que o JSON contém os dois idiomas.
 
 ```bash
 pdftotext main.pdf -

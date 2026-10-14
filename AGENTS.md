@@ -21,7 +21,7 @@ Prioridades:
 - `curriculos/curriculo-geral.yaml`: fonte de conteudo do perfil geral de TI, sistemas e suporte.
 - `curriculo.typ`: layout compartilhado em Typst; le diretamente o YAML passado via `--input dados=...`.
 - `fonts/`: fontes Latin Modern Sans versionadas, usadas pelo Typst.
-- `main.pdf` e `preview.png`: artefatos finais do perfil de software.
+- `main.pdf` e `preview-<pagina>.png` (`preview-1.png`, `preview-2.png`...): artefatos finais do perfil de software.
 - `main-geral.pdf` e `preview-geral.png`: artefatos finais do perfil geral.
 - `scripts/generate_resume_json.rb`: validacao bilingue e conversao para o contrato JSON publico.
 - `wrangler.jsonc`: configuracao do Worker que publica os assets estaticos.
@@ -49,8 +49,9 @@ sed -n '1,280p' README.md
 
 3. Edite o conteudo no YAML correspondente. Edite `curriculo.typ` somente para mudancas de layout, mantendo:
 
-- Uma pagina sempre que possivel.
-- Secoes diretas: resumo, competencias, experiencia, educacao, idiomas e projetos quando existirem.
+- Design padrao (definido a partir de `Marcio-Valente-cv.pdf` da skill tailor-resume): 11pt, margem 1.7cm, secoes sem filetes, hierarquia por tamanho, cor e espaco.
+- Somente `main.pdf` (perfil principal) pode passar de uma pagina; `main-geral.pdf` e as candidaturas da skill tailor-resume ficam em 1 pagina, cortando conteudo e nunca encolhendo o layout.
+- Secoes diretas, nesta ordem: resumo, experiencia, projetos, competencias, educacao e idiomas.
 - Texto extraivel e sem decoracao excessiva.
 - Keywords distribuidas naturalmente nas experiencias e competencias, sem secao artificial de "Palavras-chave".
 
@@ -87,7 +88,7 @@ pdfinfo main-geral.pdf
 Critérios mínimos:
 
 - `pdftotext` deve retornar texto legivel, com acentos corretos e secoes em ordem.
-- `pdfinfo` deve confirmar 1 pagina em A4, salvo pedido explicito do usuario para expandir.
+- `pdfinfo` deve confirmar A4 nos dois PDFs e 1 pagina em `main-geral.pdf`; `main.pdf` pode ter mais de uma pagina.
 
 ## Padrao de commits
 
