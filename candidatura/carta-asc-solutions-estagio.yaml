@@ -1,0 +1,37 @@
+# Carta de apresentação: ASC Solutions, Estágio em Desenvolvimento de Software (remoto).
+# Layout em carta.typ; cabeçalho vem de candidatura/curriculo-asc-solutions-estagio.yaml.
+local_data: "Manaus, 13 de outubro de 2026"
+assunto: "Candidatura ao estágio em desenvolvimento de software"
+saudacao: "À equipe de recrutamento da ASC Solutions,"
+paragrafos:
+  - >-
+    Quero me candidatar ao estágio remoto em desenvolvimento de software. Sou estudante de
+    Engenharia de Software na Universidade Federal do Amazonas, com conclusão prevista para
+    janeiro de 2027, e hoje divido meu tempo entre dois projetos reais: um estágio full stack
+    no 4º Centro de Telemática de Área do Exército Brasileiro e o frontend de um projeto de
+    pesquisa da Motorola com a UFAM.
+  - >-
+    A atividade descrita na vaga, desenvolver rotinas para reparar e evoluir projetos em
+    andamento, é o que faço no dia a dia. No 4º CTA, trabalho em um time de 5 estagiários no
+    sistema que vai substituir a planilha usada para consolidar a demanda de recursos de 63
+    organizações militares, com PostgreSQL como banco. Além do código, escrevo as tasks,
+    organizo o backlog e converso diretamente com o cliente para fechar requisitos. Também
+    configurei a integração contínua do projeto no GitHub Actions, com lint e type-check
+    obrigatórios em todo pull request. No MOB4AI, faço parte do time que desenvolve
+    funcionalidades de performance em dashboards usados por pesquisadores da Motorola e da
+    Eldorado.
+  - >-
+    Uso HTML, CSS, JavaScript, TypeScript e SQL também em projetos acadêmicos e pessoais. No
+    NAVIR Web, sistema de gestão acadêmica da UFAM, co-lidero uma equipe técnica de 15 pessoas
+    e cuido da organização da arquitetura e da documentação, uma experiência que me ensinou a
+    me comunicar com clareza e a administrar prazos com várias pessoas envolvidas.
+  - >-
+    Quero ser transparente: ainda não trabalhei com C#, .NET e Angular, a stack principal de
+    vocês. Os conceitos que uso hoje (componentes e TypeScript no frontend, APIs REST, ORM e
+    banco relacional no backend) são os mesmos dessa stack, e vejo no estágio a oportunidade
+    de aprendê-la junto com desenvolvedores experientes, contribuindo desde o início com o que
+    já sei fazer.
+  - >-
+    Seria um prazer conversar sobre como posso ajudar nos projetos da ASC Solutions. Meu
+    currículo segue em anexo, e meus projetos estão disponíveis em github.com/mericxy.
+despedida: "Atenciosamente,"

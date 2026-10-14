@@ -1,0 +1,120 @@
+# Candidatura: ASC Solutions, Estágio em Desenvolvimento de Software (remoto).
+# Derivado de curriculos/curriculo.yaml @ 1ca9be1; o layout permanece em curriculo.typ.
+pessoal:
+  nome: Marcio Valente
+  titulo: "Estagiário em Desenvolvimento Full Stack | JavaScript | TypeScript | SQL"
+  email: eric.melv42@gmail.com
+  telefone: "(92) 99514-4499"
+  localizacao: "Manaus, Amazonas, Brasil"
+  linkedin:
+    url: https://www.linkedin.com/in/marcioericlvalente
+    texto: linkedin.com/in/marcioericlvalente
+  github:
+    url: https://www.github.com/mericxy
+    texto: github.com/mericxy
+  site:
+    url: https://meric.dev.br
+    texto: meric.dev.br
+
+resumo: >-
+  Estudante de Engenharia de Software na UFAM, com estágio full stack no Exército
+  Brasileiro e atuação no frontend de um projeto de pesquisa Motorola/UFAM. Trabalho
+  na evolução de sistemas em andamento, de interfaces web a APIs com banco PostgreSQL,
+  e escrevo tasks e documentação para alinhar a equipe ao cliente.
+
+competencias:
+  - categoria: Frontend
+    itens:
+      - JavaScript
+      - TypeScript
+      - HTML5
+      - CSS3
+      - React
+      - Tailwind CSS
+      - Vite
+  - categoria: Backend e dados
+    itens:
+      - Python
+      - FastAPI
+      - Django
+      - NestJS
+      - PostgreSQL
+      - SQLite
+      - SQLAlchemy
+      - APIs REST
+  - categoria: Ferramentas
+    itens:
+      - Git
+      - GitHub Actions
+      - Docker
+      - Vitest
+      - Pytest
+      - Playwright
+      - Jira
+      - trabalho em equipe ágil
+
+experiencias:
+  - cargo: Estagiário em Desenvolvimento de Software Full Stack
+    periodo: Set/2026 -- Presente
+    organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Desenvolvo, em um time de 5 estagiários, o sistema que vai digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com meta de reduzir de 5 para no máximo 1 retorno por ciclo.
+      - Escrevo as tasks, organizo o backlog e trato os requisitos em conversa direta com o cliente; o projeto usa FastAPI, Celery, Valkey e PostgreSQL.
+      - Configurei CI no GitHub Actions com 5 jobs paralelos, lint e type-check obrigatórios em todo PR; o pipeline roda mais de 500 testes automatizados em ~1m40s.
+  - cargo: Frontend Developer
+    periodo: Mai/2025 -- Presente
+    organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
+    localizacao: "Itacoatiara, Amazonas"
+    realizacoes:
+      - Contribuo na arquitetura frontend e na escolha de stack para gráficos e tabelas interativas com centenas de megabytes de dados e atualização em tempo real.
+      - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico) em dashboards usados por pesquisadores da Motorola e da Eldorado.
+
+projetos:
+  - nome: NAVIR Web
+    links:
+      - url: https://github.com/navir-ufam/NAVIR-Web
+        texto: github.com/navir-ufam/NAVIR-Web
+    tecnologias:
+      - React
+      - TypeScript
+      - NestJS
+      - PostgreSQL
+      - Jira
+    descricao: Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando a arquitetura e a documentação de um sistema de gestão acadêmica.
+  - nome: DocParse
+    links:
+      - url: https://docparse.meric.dev.br/
+        texto: docparse.meric.dev.br
+      - url: https://github.com/mericxy/DocParse
+        texto: github.com/mericxy/DocParse
+    tecnologias:
+      - Python
+      - FastAPI
+      - SQLite
+      - React
+      - TypeScript
+      - Docker
+    descricao: Aplicação web para OCR e transcrição de documentos trabalhistas em planilhas e JSON, com pipeline assíncrono em FastAPI, interface de revisão em React/TypeScript e deploy com Docker Compose.
+  - nome: ReservaUFAM
+    links:
+      - url: https://github.com/mericxy/ReservaUFAM
+        texto: github.com/mericxy/ReservaUFAM
+    tecnologias:
+      - React
+      - Tailwind CSS
+      - Django
+      - PostgreSQL
+    descricao: Projeto em equipe para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei no frontend, com interfaces em React e Tailwind CSS integradas às funcionalidades.
+
+educacao:
+  - curso: Bacharelado em Engenharia de Software
+    periodo: "Out/2022 -- Conclusão prevista: Jan/2027"
+    instituicao: Universidade Federal do Amazonas
+    localizacao: "Itacoatiara, Amazonas"
+
+idiomas:
+  - idioma: Português
+    nivel: Nativo
+  - idioma: Inglês
+    nivel: Intermediário (B1)

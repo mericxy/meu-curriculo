@@ -20,6 +20,7 @@ Prioridades:
 - `curriculos/curriculo-en.yaml`: traducao inglesa do perfil de software para a API estatica.
 - `curriculos/curriculo-geral.yaml`: fonte de conteudo do perfil geral de TI, sistemas e suporte.
 - `curriculo.typ`: layout compartilhado em Typst; le diretamente o YAML passado via `--input dados=...`.
+- `carta.typ`: layout da carta de apresentacao, com o cabecalho do YAML do curriculo (`--input dados=...`) e o corpo de um YAML proprio (`--input carta=...`); comando de build no README.
 - `fonts/`: fontes Latin Modern Sans versionadas, usadas pelo Typst.
 - `main.pdf` e `preview-<pagina>.png` (`preview-1.png`, `preview-2.png`...): artefatos finais do perfil de software.
 - `main-geral.pdf` e `preview-geral.png`: artefatos finais do perfil geral.
