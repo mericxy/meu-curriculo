@@ -97,6 +97,19 @@ experiencias:
       - Motorola and Eldorado (a Motorola partner) researchers use the dashboards for mobile device data analysis.
 
 projetos:
+  - nome: Margem
+    links:
+      - url: https://margem.ia.br
+        texto: margem.ia.br
+    tecnologias:
+      - React
+      - TypeScript
+      - NestJS
+      - Fastify
+      - PostgreSQL
+      - Docker
+      - Cloudflare
+    descricao: Essay grading platform with photo and PDF uploads, an asynchronous LLM reading and grading pipeline, human review, and PDF/CSV reports. NestJS/Fastify API with PostgreSQL, pg-boss queues, a separate worker, React/TypeScript frontend, and Docker deployment behind a Cloudflare Tunnel.
   - nome: Currículo Pipeline
     links:
       - url: https://meric.dev.br/resume/
