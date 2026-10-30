@@ -84,9 +84,9 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Brazilian Army"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - System under development to digitize resource demand for the 4º CTA and its 63 MOs, currently handled in a spreadsheet averaging 5 returns per cycle, aiming to reduce that to at most 1.
-      - On a 5-intern team; I write the tasks, organize the backlog, and help keep everyone aligned. The project uses FastAPI, Celery, Valkey, and PostgreSQL, and we discuss requirements directly with the client (4º CTA).
-      - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR; the pipeline runs over 500 automated tests averaging ~1m40s per run.
+      - Built a system to digitize resource demand for the 4º CTA and its 63 MOs, handled in a spreadsheet averaging 5 returns per cycle, aiming to reduce that to at most 1.
+      - On a 5-intern team, I wrote the tasks, organized the backlog, and helped keep everyone aligned. The project used FastAPI, Celery, Valkey, and PostgreSQL, and we discussed requirements directly with the client (4º CTA).
+      - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR; the pipeline ran over 500 automated tests averaging ~1m40s per run.
   - cargo: Frontend Developer
     periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"

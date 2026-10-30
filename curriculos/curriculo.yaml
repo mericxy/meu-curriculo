@@ -84,9 +84,9 @@ experiencias:
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
-      - No time de 5 estagiários, escrevo as tasks, organizo o backlog e ajudo a manter o pessoal alinhado. O projeto usa FastAPI, Celery, Valkey e PostgreSQL, e tratamos dos requisitos em conversa direta com o cliente (4º CTA).
-      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR; o pipeline tem mais de 500 testes automatizados e leva em média ~1m40s por execução.
+      - Desenvolvemos um sistema para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
+      - No time de 5 estagiários, escrevi as tasks, organizei o backlog e ajudei a manter o pessoal alinhado. O projeto usou FastAPI, Celery, Valkey e PostgreSQL, e tratamos dos requisitos em conversa direta com o cliente (4º CTA).
+      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR; o pipeline tinha mais de 500 testes automatizados e levava em média ~1m40s por execução.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
