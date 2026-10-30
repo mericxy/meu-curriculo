@@ -1,7 +1,7 @@
-# Versão geral para vagas de TI, sistemas, suporte técnico ou desenvolvimento.
+# Perfil geral (coringa): vagas gerais, administrativas ou fora de TI; destaca atendimento, equipe e IA, sem stack técnica.
 pessoal:
   nome: Marcio Valente
-  titulo: "Tecnologia da Informação | Sistemas | Suporte Técnico"
+  titulo: "Profissional de Tecnologia e Operações | Sistemas, Administração e Suporte"
   email: eric.melv42@gmail.com
   telefone: "(92) 99514-4499"
   localizacao: "Manaus, Amazonas, Brasil"
@@ -16,90 +16,80 @@ pessoal:
     texto: meric.dev.br
 
 resumo: >-
-  Profissional de TI que une desenvolvimento de sistemas e apoio a quem os utiliza: traduzo
-  necessidades de usuários em requisitos, organizo demandas e documento soluções. Experiência
-  no Exército Brasileiro, na UFAM e no CETAM e em pesquisa com dados de alto volume.
+  Graduando em Engenharia de Software (UFAM) no início da carreira, com experiência em atendimento
+  ao público, rotinas administrativas e trabalho em equipe no Exército Brasileiro, no CETAM e em
+  pesquisa Motorola/UFAM. Entendo de computadores e sistemas, uso IA no dia a dia para produzir textos,
+  áudio e vídeo, e busco oportunidade para aprender com outros profissionais e contribuir em diferentes áreas.
 
 competencias:
-  - categoria: Suporte e operações
+  - categoria: IA no fluxo de trabalho
     itens:
-      - apoio técnico
+      - ChatGPT, Claude e Google AI Studio para textos e áudio
+      - Gamma para apresentações
+      - Canva e Pencil para design
+      - vídeos com Claude Code
+      - criação de sistemas e automações
+  - categoria: Informática e escritório
+    itens:
+      - Excel
+      - Word
+      - Google Workspace
+      - Google Meet
+      - Audacity
+      - Windows, macOS e Linux
+  - categoria: Comunicação e liderança
+    itens:
+      - atendimento ao público
+      - comunicação com clientes
+      - trabalho em equipe
+      - liderança de equipes
+      - organização de prazos
+      - redação de documentos
       - resolução de problemas
-      - organização de rotinas
-      - documentação
-      - atendimento de demandas
-  - categoria: Sistemas e dados
-    itens:
-      - aplicações web
-      - integração de APIs
-      - dashboards
-      - visualização de dados
-      - PostgreSQL
-      - deploy em servidor
-  - categoria: Desenvolvimento
-    itens:
-      - React
-      - JavaScript
-      - TypeScript
-      - Python
-      - Django
-      - FastAPI
-      - Node.js
-      - HTML5
-      - CSS3
-  - categoria: Ferramentas e processos
-    itens:
-      - Git
-      - GitHub
-      - Docker
-      - Jira
-      - Figma
-      - testes de software
-      - trabalho em equipe ágil
+      - aprendizado rápido
 
 experiencias:
-  - cargo: Estagiário em Desenvolvimento de Software Full Stack
-    periodo: Set/2026 -- Presente
+  - cargo: Estagiário em Desenvolvimento de Sistemas
+    periodo: Set/2026 -- Nov/2026
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
-      - Sistema em desenvolvimento para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, hoje feita em planilha, com meta de reduzir de 5 retornos por ciclo para no máximo 1.
-      - Escrevo as tasks, organizo o backlog e ajudo a manter o time de 5 estagiários alinhado, com requisitos tratados em conversa direta com o cliente. Stack em FastAPI, Celery, Valkey e PostgreSQL.
-  - cargo: Frontend Developer
+      - "Assumi a liderança de 5 estagiários: defini prazos e sprints, distribuí, acompanhei e revisei tarefas."
+      - Fiz a ponte entre o time e os oficiais em ambiente de hierarquia militar, decidindo em equipe.
+      - Desenvolvemos um sistema para substituir a planilha de pedidos de recursos de 63 unidades militares.
+  - cargo: Desenvolvedor de Software Frontend (Bolsista)
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Atuo na arquitetura frontend e na escolha de stack para gráficos e tabelas interativas com centenas de megabytes em tempo real, incluindo melhorias de performance no Apache ECharts.
-      - Dashboards usados por pesquisadores da Motorola e da Eldorado na análise de dados de dispositivos móveis.
-  - cargo: Estagiário
+      - Equipe de pesquisa de mais de 20 pessoas, com reuniões diárias e semanais com a Eldorado e a Motorola.
+      - Cumpro metas de entrega por sprint e escrevo relatórios mensais de pesquisa.
+      - Desenvolvo painéis usados por pesquisadores da Motorola e da Eldorado para analisar dados de celulares.
+  - cargo: Estagiário Administrativo
     periodo: Nov/2024 -- Mai/2025
-    organizacao: CETAM
+    organizacao: Centro de Educação Tecnológica do Amazonas (CETAM)
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Apoio técnico e administrativo, com organização, comunicação e resolução de problemas operacionais.
+      - Atendimento presencial, por WhatsApp e por e-mail a alunos, professores e público.
+      - Redação de ofícios, memorandos, declarações e relatórios submetidos à aprovação da chefia.
+      - Controle de frequência e documentos em Excel e uso dos sistemas internos de matrícula e cadastro.
+      - Por iniciativa própria, apoio de informática no dia a dia e criação de cartazes e comunicados no Canva.
 
 projetos:
+  - nome: Margem
+    links:
+      - url: https://margem.ia.br
+        texto: margem.ia.br
+    subtitulo: "Correção de redações com IA | Projeto próprio"
+    descricao: >-
+      Plataforma que ajuda professores a corrigir redações com IA. O aluno envia foto ou PDF, a IA
+      sugere a correção e o professor revisa. Mais de 200 redações corrigidas em testes com professores.
   - nome: DocParse
     links:
       - url: https://docparse.meric.dev.br/
         texto: docparse.meric.dev.br
-      - url: https://github.com/mericxy/DocParse
-        texto: github.com/mericxy/DocParse
-    subtitulo: "Processamento e transcrição de documentos | Full Stack e OCR"
-    descricao: Aplicação web para OCR e extração de dados de cartões de ponto e holerites em PDF para planilhas, com processamento assíncrono em Python, conferência em React e deploy com Docker.
-  - nome: ReservaUFAM
-    links:
-      - url: https://github.com/mericxy/ReservaUFAM
-        texto: github.com/mericxy/ReservaUFAM
-    subtitulo: "Sistema de reservas institucionais | Projeto em equipe"
-    descricao: Projeto para disciplinas da UFAM que centraliza reservas de recursos institucionais. Atuei nas interfaces e na integração das funcionalidades.
-  - nome: NAVIR Web
-    links:
-      - url: https://github.com/navir-ufam/NAVIR-Web
-        texto: github.com/navir-ufam/NAVIR-Web
-    subtitulo: "Sistema de gestão acadêmica | Liderança técnica"
-    descricao: Co-lidero a equipe técnica de 15 pessoas no NAVIR Web (UFAM), organizando arquitetura e documentação do sistema.
+    subtitulo: "Leitura automática de documentos | Desafio técnico"
+    descricao: Ferramenta que transforma cartões de ponto e holerites em PDF em planilhas, sem digitação manual.
 
 educacao:
   - curso: Bacharelado em Engenharia de Software
@@ -114,5 +104,7 @@ idiomas:
     nivel: Intermediário (B1)
 
 informacoes_adicionais:
+  - titulo: Disponibilidade
+    valor: imediata
   - titulo: Carteira Nacional de Habilitação (CNH)
     valor: categorias A e B

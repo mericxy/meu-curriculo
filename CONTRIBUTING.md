@@ -34,7 +34,7 @@ flowchart LR
 | --- | --- |
 | `curriculos/curriculo.yaml` | Conteúdo do perfil de software. |
 | `curriculos/curriculo-en.yaml` | Tradução inglesa do perfil de software para a API estática. |
-| `curriculos/curriculo-geral.yaml` | Conteúdo do perfil geral de TI, sistemas e suporte. |
+| `curriculos/curriculo-geral.yaml` | Conteúdo do perfil geral (coringa) para vagas gerais, administrativas ou fora de TI. |
 | `scripts/generate_resume_json.rb` | Valida os dois idiomas e gera o contrato JSON público. |
 | `curriculo.typ` | Layout compartilhado; lê o YAML indicado em `--input dados=...`. |
 | `fonts/` | Fontes Latin Modern Sans usadas no PDF (GUST Font License). |
