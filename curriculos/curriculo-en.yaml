@@ -80,7 +80,7 @@ competencias:
 
 experiencias:
   - cargo: Full Stack Software Development Intern
-    periodo: Sep/2026 -- Present
+    periodo: Sep/2026 -- Nov/2026
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Brazilian Army"
     localizacao: "Manaus, Amazonas"
     realizacoes:
@@ -95,6 +95,13 @@ experiencias:
       - Contribute to the frontend architecture and stack selection for handling hundreds of megabytes in interactive real-time charts and tables.
       - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom).
       - Motorola and Eldorado (a Motorola partner) researchers use the dashboards for mobile device data analysis.
+  - cargo: Administrative Intern
+    periodo: Nov/2024 -- May/2025
+    organizacao: Centro de Educação Tecnológica do Amazonas (CETAM)
+    localizacao: "Itacoatiara, Amazonas"
+    realizacoes:
+      - Served students and teachers in person, via WhatsApp, and by email, and operated the internal enrollment and records systems.
+      - Drafted official letters and certificates, built Excel spreadsheets with pivot tables, and provided IT support to office staff.
 
 projetos:
   - nome: Margem

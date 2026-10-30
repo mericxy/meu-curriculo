@@ -80,7 +80,7 @@ competencias:
 
 experiencias:
   - cargo: Estagiário em Desenvolvimento de Software Full Stack
-    periodo: Set/2026 -- Presente
+    periodo: Set/2026 -- Nov/2026
     organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
     localizacao: "Manaus, Amazonas"
     realizacoes:
@@ -95,6 +95,13 @@ experiencias:
       - Contribuo na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
       - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
       - Pesquisadores da Motorola e da Eldorado (parceira da Motorola) usam os dashboards para análise de dados de dispositivos móveis.
+  - cargo: Estagiário Administrativo
+    periodo: Nov/2024 -- Mai/2025
+    organizacao: Centro de Educação Tecnológica do Amazonas (CETAM)
+    localizacao: "Itacoatiara, Amazonas"
+    realizacoes:
+      - Atendimento presencial, por WhatsApp e por e-mail a alunos e professores, e operação dos sistemas internos de matrícula e cadastro.
+      - Redação de ofícios e declarações, planilhas no Excel com tabelas dinâmicas e apoio de informática aos usuários do setor.
 
 projetos:
   - nome: Margem
