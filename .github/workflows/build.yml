@@ -40,9 +40,12 @@ jobs:
         run: |
           pdfinfo main.pdf | grep -q '^Page size:.*A4'
           pdfinfo main-geral.pdf | grep -q '^Page size:.*A4'
+          pdfinfo main-tech.pdf | grep -q '^Page size:.*A4'
+          pdfinfo main-tech.pdf | grep -q '^Pages: *1$'
           pdfinfo main-geral.pdf | grep -q '^Pages: *1$'
           pdftotext main.pdf - | grep -q 'Resumo Profissional'
           pdftotext main-geral.pdf - | grep -q 'Resumo Profissional'
+          pdftotext main-tech.pdf - | grep -q 'Resumo Profissional'
 
       - name: Validate static API
         run: |

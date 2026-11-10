@@ -19,7 +19,8 @@ resumo: >-
   Full stack developer working from requirements gathering to deployment, focused on
   applications that handle large volumes of data and on quality backed by automated tests
   and CI. I combine Python backends with React and TypeScript interfaces and use AI agents
-  daily to speed up development and code review.
+  daily to speed up development and code review. I lead teams and talk directly with clients
+  and partners, from interns in the Army to Motorola researchers.
 
 competencias:
   - categoria: Frontend and UI
@@ -64,6 +65,7 @@ competencias:
       - Docker
       - server deployment
       - Git
+      - Windows, macOS, and Linux
       - GitHub Actions
       - documentation
       - incremental delivery
@@ -77,6 +79,11 @@ competencias:
       - Jira
       - agile teamwork
       - task organization
+      - team leadership
+      - client communication
+      - public service
+      - document writing
+      - deadline management
 
 experiencias:
   - cargo: Full Stack Software Development Intern
@@ -85,23 +92,25 @@ experiencias:
     localizacao: "Manaus, Amazonas"
     realizacoes:
       - Built a system to digitize resource demand for the 4º CTA and its 63 MOs, handled in a spreadsheet averaging 5 returns per cycle, aiming to reduce that to at most 1.
-      - On a 5-intern team, I wrote the tasks, organized the backlog, and helped keep everyone aligned. The project used FastAPI, Celery, Valkey, and PostgreSQL, and we discussed requirements directly with the client (4º CTA).
+      - "I took over leading the 5-intern team: I set deadlines and sprints, wrote and reviewed tasks, organized the backlog, and bridged the team and the officers in a military hierarchy. The project used FastAPI, Celery, Valkey, and PostgreSQL, and we discussed requirements directly with the client (4º CTA)."
       - Set up CI on GitHub Actions with 5 parallel jobs (unit and integration tests with PostgreSQL/Valkey, frontend tests with Vitest, E2E with Playwright, and security checks with gitleaks/pip-audit), with mandatory lint and type-check on every PR; the pipeline ran over 500 automated tests averaging ~1m40s per run.
   - cargo: Frontend Developer
     periodo: May/2025 -- Present
     organizacao: "MOB4AI | Motorola/UFAM research project"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribute to the frontend architecture and stack selection for handling hundreds of megabytes in interactive real-time charts and tables.
-      - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom).
+      - On a research team of over 20 people, contribute to the frontend architecture and stack selection for handling hundreds of megabytes in interactive real-time charts and tables.
+      - Am part of the team behind performance features in Apache ECharts (update pause, dynamic zoom), meeting delivery goals per sprint.
       - Motorola and Eldorado (a Motorola partner) researchers use the dashboards for mobile device data analysis.
+      - Write monthly research reports on the project's progress.
   - cargo: Administrative Intern
     periodo: Nov/2024 -- May/2025
     organizacao: Centro de Educação Tecnológica do Amazonas (CETAM)
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Served students and teachers in person, via WhatsApp, and by email, and operated the internal enrollment and records systems.
-      - Drafted official letters and certificates, built Excel spreadsheets with pivot tables, and provided IT support to office staff.
+      - Served students, teachers, and the public in person, via WhatsApp, and by email, and operated the internal enrollment and records systems.
+      - Drafted official letters, memos, certificates, and reports submitted for management approval; built Excel spreadsheets with pivot tables and handled attendance and document control.
+      - On my own initiative, provided IT support to office staff.
 
 projetos:
   - nome: Margem
@@ -116,7 +125,7 @@ projetos:
       - PostgreSQL
       - Docker
       - Cloudflare
-    descricao: Essay grading platform with photo and PDF uploads, an asynchronous LLM reading and grading pipeline, human review, and PDF/CSV reports. NestJS/Fastify API with PostgreSQL, pg-boss queues, a separate worker, React/TypeScript frontend, and Docker deployment behind a Cloudflare Tunnel.
+    descricao: Essay grading platform with photo and PDF uploads, an asynchronous LLM reading and grading pipeline, human review, and PDF/CSV reports. NestJS/Fastify API with PostgreSQL, pg-boss queues, a separate worker, React/TypeScript frontend, and Docker deployment behind a Cloudflare Tunnel. Over 200 essays graded in tests with teachers.
   - nome: Currículo Pipeline
     links:
       - url: https://meric.dev.br/resume/

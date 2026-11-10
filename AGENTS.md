@@ -19,11 +19,13 @@ Prioridades:
 - `curriculos/curriculo.yaml`: fonte de conteudo do perfil de software.
 - `curriculos/curriculo-en.yaml`: traducao inglesa do perfil de software para a API estatica.
 - `curriculos/curriculo-geral.yaml`: fonte de conteudo do perfil geral (coringa) para vagas gerais, administrativas ou fora de TI: atendimento, trabalho em equipe, lideranca, rotinas administrativas e IA no fluxo de trabalho, sem stack tecnica. E o "curriculo geral" quando o usuario pedir para usa-lo (inclusive na skill tailor-resume).
+- `curriculos/curriculo-tech.yaml`: fonte de conteudo do perfil tech, resumo do perfil de software para vagas de tecnologia, em 1 pagina, apenas com o conteudo mais relevante do `curriculo.yaml`. E o "curriculo tech" quando o usuario pedir.
 - `curriculo.typ`: layout compartilhado em Typst; le diretamente o YAML passado via `--input dados=...`.
 - `carta.typ`: layout da carta de apresentacao, com o cabecalho do YAML do curriculo (`--input dados=...`) e o corpo de um YAML proprio (`--input carta=...`); comando de build no README.
 - `fonts/`: fontes Latin Modern Sans versionadas, usadas pelo Typst.
 - `main.pdf` e `preview-<pagina>.png` (`preview-1.png`, `preview-2.png`...): artefatos finais do perfil de software.
 - `main-geral.pdf` e `preview-geral.png`: artefatos finais do perfil geral.
+- `main-tech.pdf` e `preview-tech.png`: artefatos finais do perfil tech.
 - `scripts/generate_resume_json.rb`: validacao bilingue e conversao para o contrato JSON publico.
 - `wrangler.jsonc`: configuracao do Worker que publica os assets estaticos.
 - `Makefile`: alvos `software`, `geral`, `api` e `todos`.
@@ -51,7 +53,7 @@ sed -n '1,280p' README.md
 3. Edite o conteudo no YAML correspondente. Edite `curriculo.typ` somente para mudancas de layout, mantendo:
 
 - Design padrao (definido a partir de `Marcio-Valente-cv.pdf` da skill tailor-resume): 11pt, margem 1.7cm, secoes sem filetes, hierarquia por tamanho, cor e espaco.
-- Somente `main.pdf` (perfil principal) pode passar de uma pagina; `main-geral.pdf` e as candidaturas da skill tailor-resume ficam em 1 pagina, cortando conteudo e nunca encolhendo o layout.
+- Somente `main.pdf` (perfil principal) pode passar de uma pagina; `main-tech.pdf`, `main-geral.pdf` e as candidaturas da skill tailor-resume ficam em 1 pagina, cortando conteudo e nunca encolhendo o layout.
 - Secoes diretas, nesta ordem: resumo, experiencia, projetos, competencias, educacao e idiomas.
 - Texto extraivel e sem decoracao excessiva.
 - Keywords distribuidas naturalmente nas experiencias e competencias, sem secao artificial de "Palavras-chave".
@@ -61,6 +63,7 @@ sed -n '1,280p' README.md
 ```bash
 make software
 make geral
+make tech
 ```
 
 Quando `curriculo.typ`, `fonts/`, o gerador JSON ou o `Makefile` mudar, gere todos os artefatos:
@@ -84,12 +87,14 @@ pdftotext main.pdf -
 pdfinfo main.pdf
 pdftotext main-geral.pdf -
 pdfinfo main-geral.pdf
+pdftotext main-tech.pdf -
+pdfinfo main-tech.pdf
 ```
 
 Critérios mínimos:
 
 - `pdftotext` deve retornar texto legivel, com acentos corretos e secoes em ordem.
-- `pdfinfo` deve confirmar A4 nos dois PDFs e 1 pagina em `main-geral.pdf`; `main.pdf` pode ter mais de uma pagina.
+- `pdfinfo` deve confirmar A4 em todos os PDFs e 1 pagina em `main-tech.pdf` e `main-geral.pdf`; `main.pdf` pode ter mais de uma pagina.
 
 ## Padrao de commits
 

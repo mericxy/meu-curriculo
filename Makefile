@@ -1,4 +1,4 @@
-.PHONY: all software geral api todos
+.PHONY: all software tech geral api todos
 
 TYPST = typst compile --root . --font-path fonts --ignore-system-fonts
 LAYOUT = curriculo.typ $(wildcard fonts/*.otf)
@@ -7,11 +7,13 @@ all: software
 
 software: main.pdf preview-1.png
 
+tech: main-tech.pdf preview-tech.png
+
 geral: main-geral.pdf preview-geral.png
 
 api: dist/api/v1/curriculo.json
 
-todos: software geral api
+todos: software tech geral api
 
 dist/api/v1/curriculo.json: curriculos/curriculo.yaml curriculos/curriculo-en.yaml scripts/generate_resume_json.rb
 	ruby scripts/generate_resume_json.rb curriculos/curriculo.yaml curriculos/curriculo-en.yaml $@
@@ -28,4 +30,10 @@ main-geral.pdf: curriculos/curriculo-geral.yaml $(LAYOUT)
 	$(TYPST) --input dados=$< curriculo.typ $@
 
 preview-geral.png: curriculos/curriculo-geral.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< --format png --ppi 160 curriculo.typ $@
+
+main-tech.pdf: curriculos/curriculo-tech.yaml $(LAYOUT)
+	$(TYPST) --input dados=$< curriculo.typ $@
+
+preview-tech.png: curriculos/curriculo-tech.yaml $(LAYOUT)
 	$(TYPST) --input dados=$< --format png --ppi 160 curriculo.typ $@

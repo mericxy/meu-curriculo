@@ -35,6 +35,7 @@ flowchart LR
 | `curriculos/curriculo.yaml` | Conteúdo do perfil de software. |
 | `curriculos/curriculo-en.yaml` | Tradução inglesa do perfil de software para a API estática. |
 | `curriculos/curriculo-geral.yaml` | Conteúdo do perfil geral (coringa) para vagas gerais, administrativas ou fora de TI. |
+| `curriculos/curriculo-tech.yaml` | Resumo do perfil de software para vagas de tecnologia, em 1 página. |
 | `scripts/generate_resume_json.rb` | Valida os dois idiomas e gera o contrato JSON público. |
 | `curriculo.typ` | Layout compartilhado; lê o YAML indicado em `--input dados=...`. |
 | `fonts/` | Fontes Latin Modern Sans usadas no PDF (GUST Font License). |
@@ -44,16 +45,18 @@ flowchart LR
 ## Fluxo de alteração
 
 1. Edite o YAML do perfil desejado ou o arquivo compartilhado correspondente.
-2. Execute `make software` ou `make geral` quando alterar conteúdo.
+2. Execute `make software`, `make tech` ou `make geral` quando alterar conteúdo.
 3. Execute `make api` ao alterar a fonte inglesa ou o gerador JSON.
 4. Execute `make todos` quando alterar o layout, as fontes, o gerador JSON ou o `Makefile`.
-5. Confirme que o texto pode ser extraído, que os PDFs estão em A4 e que `main-geral.pdf` permanece em uma página (só `main.pdf` pode ter mais de uma) e que o JSON contém os dois idiomas.
+5. Confirme que o texto pode ser extraído, que os PDFs estão em A4 e que `main-tech.pdf` e `main-geral.pdf` permanecem em uma página (só `main.pdf` pode ter mais de uma) e que o JSON contém os dois idiomas.
 
 ```bash
 pdftotext main.pdf -
 pdfinfo main.pdf
 pdftotext main-geral.pdf -
 pdfinfo main-geral.pdf
+pdftotext main-tech.pdf -
+pdfinfo main-tech.pdf
 ruby -rjson -e 'JSON.parse(File.read("dist/api/v1/curriculo.json"))'
 ```
 

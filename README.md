@@ -22,7 +22,7 @@ flowchart LR
 ## Como funciona
 
 1. Você edita só o YAML (`curriculos/curriculo.yaml` e `curriculos/curriculo-en.yaml`).
-2. O job `build` valida os dois arquivos, compila os PDFs (`main.pdf` em A4, podendo ter mais de uma página; `main-geral.pdf` sempre em 1 página A4) e gera `dist/api/v1/curriculo.json` com `schemaVersion`.
+2. O job `build` valida os dois arquivos, compila os PDFs (`main.pdf` em A4, podendo ter mais de uma página; `main-tech.pdf` e `main-geral.pdf` sempre em 1 página A4) e gera `dist/api/v1/curriculo.json` com `schemaVersion`.
 3. O job `deploy-api` (só roda se o build passar) publica o JSON no Cloudflare Worker, espera o endpoint retornar o mesmo commit e chama o Deploy Hook do [repositório do portfólio](https://github.com/mericxy/portfolio).
 4. O portfólio busca o JSON no build do Astro, valida `schemaVersion: 1` e gera as páginas estáticas em português e inglês. Não há servidor de currículo nem `fetch` no navegador. Se a API estiver indisponível ou incompatível, o build falha e a versão anterior do site continua no ar.
 
@@ -32,6 +32,7 @@ A automação usa os repository secrets `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCO
 
 - **Perfil de software:** [PDF](main.pdf) | [DOCX](curriculo.docx) | [versão web](https://meric.dev.br/resume/)
 - **Perfil geral:** [PDF](main-geral.pdf)
+- **Perfil tech:** [PDF](main-tech.pdf)
 
 A versão web em [meric.dev.br/resume/](https://meric.dev.br/resume/) é gerada a partir da API estática:
 
@@ -56,9 +57,10 @@ Ao criar seu próprio currículo, substitua os dados pessoais, links, experiênc
 | Comando | Resultado |
 | --- | --- |
 | `make` ou `make software` | Gera `main.pdf` e `preview-<página>.png` usando `curriculos/curriculo.yaml`. |
+| `make tech` | Gera `main-tech.pdf` e `preview-tech.png` usando `curriculos/curriculo-tech.yaml`. |
 | `make geral` | Gera `main-geral.pdf` e `preview-geral.png` usando `curriculos/curriculo-geral.yaml`. |
 | `make api` | Valida os YAMLs português e inglês e gera `dist/api/v1/curriculo.json`. |
-| `make todos` | Atualiza os dois PDFs, seus previews e a API estática. |
+| `make todos` | Atualiza os três PDFs, seus previews e a API estática. |
 
 Os PDFs e previews são gerados pelo Typst a partir de `curriculo.typ`, com as fontes Latin Modern Sans versionadas em `fonts/`, então o resultado não depende das fontes instaladas na máquina. A API JSON usa Ruby e sua biblioteca padrão, sem gems adicionais. O Make verifica as datas dos arquivos e repete apenas as etapas necessárias. O diretório `dist/` é gerado localmente e não é versionado.
 

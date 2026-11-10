@@ -19,7 +19,9 @@ resumo: >-
   Desenvolvedor full stack que atua do levantamento de requisitos ao deploy, com foco
   em aplicações que lidam com grande volume de dados e em qualidade garantida por testes
   automatizados e CI. Combino backend em Python com interfaces em React e TypeScript e
-  uso agentes de IA no dia a dia para acelerar desenvolvimento e revisão de código.
+  uso agentes de IA no dia a dia para acelerar desenvolvimento e revisão de código. Lidero
+  equipes e converso diretamente com clientes e parceiros, de estagiários no Exército a
+  pesquisadores da Motorola.
 
 competencias:
   - categoria: Frontend e UI
@@ -64,6 +66,7 @@ competencias:
       - Docker
       - deploy em servidor
       - Git
+      - Windows, macOS e Linux
       - GitHub Actions
       - documentação
       - entregas incrementais
@@ -77,6 +80,11 @@ competencias:
       - Jira
       - trabalho em equipe ágil
       - organização de demandas
+      - liderança de equipes
+      - comunicação com clientes
+      - atendimento ao público
+      - redação de documentos
+      - organização de prazos
 
 experiencias:
   - cargo: Estagiário em Desenvolvimento de Software Full Stack
@@ -85,23 +93,25 @@ experiencias:
     localizacao: "Manaus, Amazonas"
     realizacoes:
       - Desenvolvemos um sistema para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
-      - No time de 5 estagiários, escrevi as tasks, organizei o backlog e ajudei a manter o pessoal alinhado. O projeto usou FastAPI, Celery, Valkey e PostgreSQL, e tratamos dos requisitos em conversa direta com o cliente (4º CTA).
+      - "Assumi a liderança do time de 5 estagiários: defini prazos e sprints, escrevi e revisei tasks, organizei o backlog e fiz a ponte entre o time e os oficiais em ambiente de hierarquia militar. O projeto usou FastAPI, Celery, Valkey e PostgreSQL, e tratamos dos requisitos em conversa direta com o cliente (4º CTA)."
       - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração com PostgreSQL/Valkey, testes de frontend com Vitest, E2E com Playwright, e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios em todo PR; o pipeline tinha mais de 500 testes automatizados e levava em média ~1m40s por execução.
   - cargo: Frontend Developer
     periodo: Mai/2025 -- Presente
     organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Contribuo na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
-      - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico).
+      - Em equipe de pesquisa de mais de 20 pessoas, contribuo na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
+      - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico), cumprindo metas de entrega por sprint.
       - Pesquisadores da Motorola e da Eldorado (parceira da Motorola) usam os dashboards para análise de dados de dispositivos móveis.
+      - Escrevo relatórios mensais de pesquisa sobre o andamento do projeto.
   - cargo: Estagiário Administrativo
     periodo: Nov/2024 -- Mai/2025
     organizacao: Centro de Educação Tecnológica do Amazonas (CETAM)
     localizacao: "Itacoatiara, Amazonas"
     realizacoes:
-      - Atendimento presencial, por WhatsApp e por e-mail a alunos e professores, e operação dos sistemas internos de matrícula e cadastro.
-      - Redação de ofícios e declarações, planilhas no Excel com tabelas dinâmicas e apoio de informática aos usuários do setor.
+      - Atendimento presencial, por WhatsApp e por e-mail a alunos, professores e público, e operação dos sistemas internos de matrícula e cadastro.
+      - Redação de ofícios, memorandos, declarações e relatórios submetidos à aprovação da chefia; planilhas no Excel com tabelas dinâmicas, controle de frequência e de documentos.
+      - Por iniciativa própria, apoio de informática aos usuários do setor.
 
 projetos:
   - nome: Margem
@@ -116,7 +126,7 @@ projetos:
       - PostgreSQL
       - Docker
       - Cloudflare
-    descricao: Plataforma de correção de redações com upload de fotos e PDFs, pipeline assíncrono de leitura e correção por LLM, revisão humana e relatórios em PDF e CSV. API em NestJS/Fastify com PostgreSQL, filas pg-boss e worker separado, front em React/TypeScript e deploy em Docker atrás de Cloudflare Tunnel.
+    descricao: Plataforma de correção de redações com upload de fotos e PDFs, pipeline assíncrono de leitura e correção por LLM, revisão humana e relatórios em PDF e CSV. API em NestJS/Fastify com PostgreSQL, filas pg-boss e worker separado, front em React/TypeScript e deploy em Docker atrás de Cloudflare Tunnel. Mais de 200 redações corrigidas em testes com professores.
   - nome: Currículo Pipeline
     links:
       - url: https://meric.dev.br/resume/
@@ -185,3 +195,9 @@ idiomas:
     nivel: Nativo
   - idioma: Inglês
     nivel: Intermediário (B1)
+
+informacoes_adicionais:
+  - titulo: Disponibilidade
+    valor: imediata
+  - titulo: Carteira Nacional de Habilitação (CNH)
+    valor: categorias A e B

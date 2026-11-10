@@ -1,0 +1,112 @@
+# Perfil tech: resumo do perfil de software para vagas de tecnologia, em 1 página, só com o conteúdo mais relevante.
+pessoal:
+  nome: Marcio Valente
+  titulo: "Desenvolvedor Full Stack | React | Node.js | Python"
+  email: eric.melv42@gmail.com
+  telefone: "(92) 99514-4499"
+  localizacao: "Manaus, Amazonas, Brasil"
+  linkedin:
+    url: https://www.linkedin.com/in/marcioericlvalente
+    texto: linkedin.com/in/marcioericlvalente
+  github:
+    url: https://www.github.com/mericxy
+    texto: github.com/mericxy
+  site:
+    url: https://meric.dev.br
+    texto: meric.dev.br
+
+resumo: >-
+  Desenvolvedor full stack que atua do levantamento de requisitos ao deploy, com foco
+  em aplicações que lidam com grande volume de dados e em qualidade garantida por testes
+  automatizados e CI. Combino backend em Python com interfaces em React e TypeScript e
+  uso agentes de IA no dia a dia para acelerar desenvolvimento e revisão de código.
+
+competencias:
+  - categoria: Frontend
+    itens:
+      - JavaScript
+      - TypeScript
+      - React
+      - Vite
+      - Tailwind CSS
+      - Apache ECharts
+  - categoria: Backend e APIs
+    itens:
+      - Python
+      - FastAPI
+      - Django
+      - Node.js
+      - NestJS
+      - PostgreSQL
+      - Celery
+      - Valkey
+  - categoria: DevOps e qualidade
+    itens:
+      - Docker
+      - Git
+      - GitHub Actions
+      - Vitest
+      - Pytest
+      - Playwright
+  - categoria: IA e colaboração
+    itens:
+      - agentes de IA
+      - MCP
+      - Jira
+      - liderança de equipes
+      - comunicação com clientes
+
+experiencias:
+  - cargo: Estagiário em Desenvolvimento de Software Full Stack
+    periodo: Set/2026 -- Nov/2026
+    organizacao: "4º Centro de Telemática de Área (4º CTA) | Exército Brasileiro"
+    localizacao: "Manaus, Amazonas"
+    realizacoes:
+      - Desenvolvemos um sistema para digitalizar a demanda de recursos do 4º CTA e suas 63 OMs, feita em planilha, com média de 5 retornos por ciclo e meta de reduzir para no máximo 1.
+      - "Assumi a liderança do time de 5 estagiários: defini prazos e sprints, organizei o backlog e tratei dos requisitos direto com o cliente. O projeto usou FastAPI, Celery, Valkey e PostgreSQL."
+      - Configurei CI no GitHub Actions com 5 jobs paralelos (testes unitários e de integração, Vitest, E2E com Playwright e verificação de segurança com gitleaks/pip-audit), com lint e type-check obrigatórios; mais de 500 testes automatizados em ~1m40s por execução.
+  - cargo: Frontend Developer
+    periodo: Mai/2025 -- Presente
+    organizacao: "MOB4AI | Projeto de pesquisa Motorola/UFAM"
+    localizacao: "Itacoatiara, Amazonas"
+    realizacoes:
+      - Em equipe de pesquisa de mais de 20 pessoas, contribuo na arquitetura frontend e na escolha de stack para lidar com centenas de megabytes em gráficos e tabelas interativas com atualização em tempo real.
+      - Faço parte do time responsável por funcionalidades de performance no Apache ECharts (pausa de atualização, zoom dinâmico); pesquisadores da Motorola e da Eldorado usam os dashboards.
+
+projetos:
+  - nome: Margem
+    links:
+      - url: https://margem.ia.br
+        texto: margem.ia.br
+    tecnologias:
+      - React
+      - TypeScript
+      - NestJS
+      - PostgreSQL
+      - Docker
+    descricao: Plataforma de correção de redações com pipeline assíncrono de leitura e correção por LLM, revisão humana e relatórios em PDF e CSV. Mais de 200 redações corrigidas em testes com professores.
+  - nome: DocParse
+    links:
+      - url: https://docparse.meric.dev.br/
+        texto: docparse.meric.dev.br
+      - url: https://github.com/mericxy/DocParse
+        texto: github.com/mericxy/DocParse
+    tecnologias:
+      - Python
+      - FastAPI
+      - Tesseract OCR
+      - React
+      - Docker
+    descricao: Aplicação web para OCR e transcrição de cartões de ponto e holerites em planilhas e JSON, com pipeline assíncrono, interface de revisão em React/TypeScript e deploy com Docker Compose.
+
+educacao:
+  - curso: Bacharelado em Engenharia de Software
+    periodo: "Out/2022 -- Conclusão prevista: Jan/2027"
+    instituicao: Universidade Federal do Amazonas
+    localizacao: "Itacoatiara, Amazonas"
+
+idiomas:
+  - idioma: Português
+    nivel: Nativo
+  - idioma: Inglês
+    nivel: Intermediário (B1)
